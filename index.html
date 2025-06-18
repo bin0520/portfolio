@@ -1007,9 +1007,9 @@ End Section Blog-->
         <div class="row gx-4 gx-lg-5 d-flex justify-content-between flex-column-reverse flex-lg-row align-items-end">
             <div class="col-12 col-lg-6 mt-5 h-100">
                 <form class="form-style-1" action="https://formspree.io/f/xwpozklq" method="POST">
-                    <input type="text" class="form-control mb-4 " id="fa-name" placeholder="Full Name">
-                    <input type="email" class="form-control mb-4 " id="fa-email" placeholder="Email">
-                    <textarea class="form-control mb-4" rows="6" cols="100" id="fa-message" placeholder="Message"></textarea>
+                    <input type="text" class="form-control mb-4 " id="fa-name" name="name" placeholder="Full Name" required>
+                    <input type="email" class="form-control mb-4 " id="fa-email" name="email" placeholder="Email" required>
+                    <textarea class="form-control mb-4" rows="6" cols="100" id="fa-message" name="message" placeholder="Message" required></textarea>
                     <div class="text-end">
                         <button class="btn btn-primary btn-icon mt-2" type="submit">Send Message</button>
                     </div>
