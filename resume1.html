@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="rtl">
+<head>
+    <!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Responsive Landing HTML Bootstrap 5 + RTL support">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="static/css/css2.css" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="static/css/photoswipe.css">
+<link rel="stylesheet" href="static/css/card.css">
+<link rel="stylesheet" href="static/css/aos.css">
+<link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/css/bootstrap.rtl.css">
+<link rel="stylesheet" href="static/css/main.css">
+<title>Ariket - Personal Portfolio Resume HTML Template + RTL support</title>
+</head>
+<body>
+<!-- Start include modal, offcanvas, etc...  -->
+<!--Modal Photo Swipe -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" aria-label="Fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Login/Register -->
+<div class="modal fade" id="AddToCart" aria-hidden="true" aria-labelledby="AddToCart" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center px-5 py-3">
+                <h2 class="h4">Your Cart</h2>
+                <button type="button" class="btn-close position-absolute end-0 me-4" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <!--Item Product-->
+
+
+
+<!--Item product-->
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product1.html">
+                <img alt="img" src="static/picture/portfolio-1.jpg" loading="lazy" class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a href="product1.html"><span>Business - Beauty, Cosmetics Store WooCommerce WordPress</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none" href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+<!--Item product-->
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product1.html">
+                <img alt="img" src="static/picture/portfolio-3.jpg" loading="lazy" class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a href="product1.html"><span>Loea - Beauty, Cosmetics Store WooCommerce WordPress</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none" href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+<!--Item product-->
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product1.html">
+                <img alt="img" src="static/picture/portfolio-4.jpg" loading="lazy" class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a href="product1.html"><span>Shuide - Responsive Landing Bootstrap 5 Template + RTL</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none" href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+<!--End Item Product-->
+                </ul>
+            </div>
+            <div class="modal-footer border-top">
+                <div class="d-flex flex-nowrap justify-content-between align-items-center mb-2 w-100">
+                    <p class="mb-1">Subtotal:</p>
+                    <h5>$480.00</h5>
+                </div>
+                <!--link-->
+                <a aria-label="link" class="btn btn-primary btn-icon w-100" href="checkout1.html"><span>Continue to Checkout</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Margic cursor -->
+<div class="cursor"></div>
+<!-- End Margic cursor -->
+<!-- End include modal, offcanvas, etc...  -->
+<main>
+    <div class="col-wrap">
+        <div class="col-sidebar bg-body-tertiary px-2 py-0 p-sm-3 text-center have-mockup-1" data-aos="fade-right">
+            <!-- Start Header -->
+            <div class="d-flex justify-content-between align-items-center d-sm-none">
+                <div class="d-inline-block py-2">
+                    <div class="hamburger-menu style-bg" data-toggle="modal" data-bs-toggle="offcanvas" data-bs-target="#MenuCanvas" aria-controls="MenuCanvas">
+    <div class="hamburger-inner">
+        <span></span>
+    </div>
+</div>
+                </div>
+                <div class="d-inline-block" data-aos="fade-left" data-aos-delay="50">
+                    <a class="btn btn-icon btn-primary btn-sm" href="#">Get it touch</a>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-viewdesktop offcanvas-menu offcanvas-start border-0 mx-auto" tabindex="-1" id="MenuCanvas" aria-labelledby="MenuCanvas">
+                <div class="offcanvas-header border-bottom">
+                    <!--Heading-->
+                    <div class="w-50">
+                        <div class="dark-v">
+                            <!--Brand-->
+                            <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index1.html">
+                                <img alt="img" src="static/picture/logo.png" loading="lazy" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="light-v">
+                            <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index1.html">
+                                <img alt="img" src="static/picture/logo-white.png" loading="lazy" class="img-fluid ">
+                            </a>
+                        </div>
+                    </div>
+                    <!--Button Close-->
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav-canvas">
+                        <!-- Start navigation -->
+<div class="border-bottom pb-4 mb-4">
+        <div class="avatar mb-2 px-5">
+            <div class="rounded-circle overflow-hidden bg-body-tertiary">
+                <a href="index1.html">
+                    <img src="static/picture/avatar.png" alt="img" class="img-fluid">
+                </a>
+
+            </div>
+        </div>
+        <div class="mt-2">
+            <h5 class="mb-0 fw-bold">Luke Johnson</h5>
+            <p class="opacity-75 fs-12">UI/UX Designer</p>
+        </div>
+    <!--Socials-->
+<ul class="list-inline list-inline-circle mb-0 d-flex align-items-center justify-content-center">
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i class="list-inline-social-icon bi bi-facebook"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i class="list-inline-social-icon bi bi-twitter-x"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i class="list-inline-social-icon bi bi-instagram"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="#"><i class="list-inline-social-icon bi bi-pinterest"></i></a></li>
+</ul>
+<!--End Socials-->
+
+
+</div>
+<ul class="navbar-nav navbar-nav-menu flex-wrap text-start ">
+    <li>
+        <a aria-label="link" class="nav-link" href="index1.html"><i class="bi bi-person-plus me-2"></i>About Me</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="portfolio1.html"><i class="bi bi-ui-radios-grid me-2"></i>Portfolio <span class="badge float-end">34</span></a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="pricing1.html"><i class="bi bi-app-indicator me-2"></i>Services</a>
+    </li>
+    <li class="active">
+        <a aria-label="link" class="nav-link" href=""><i class="bi bi-filetype-pdf me-2"></i>Resume</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="contact1.html"><i class="bi bi-geo-alt me-2"></i>Contact</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="shop1.html"><i class="bi bi-bag-check me-2"></i>Shop</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="blog.html"><i class="bi bi-sticky me-2"></i>Blog</a>
+    </li>
+</ul>
+<!-- End navigation -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+        </div>
+        <div class="col-content" data-aos="fade">
+            <!-- start section -->
+            <section class="section pt-8 pt-sm-5 pb-5 pb-sm-0 bg-primary style-black overflow-hidden">
+    <div class="container">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-12 col-xl-5 text-start text-xl-end">
+                <h2 class="mb-0 lh-1" data-aos="fade-right">Luke</h2>
+                <h2 data-aos="fade-right" data-aos-delay="50">Johnson</h2>
+                <p class="opacity-75" data-aos="fade-right" data-aos-delay="100">UI/UX Designer</p>
+                <div class="mt-5" data-aos="fade-right" data-aos-delay="150">
+                    <div>
+                        <h3 class="h6">
+                            "Design is not just what it looks like and feels like. Design is how it works."
+                        </h3>
+                        <p class="font-italic">– Steve Jobs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-7">
+                <div class="row gx-4 gx-lg-5 d-flex align-items-center">
+                    <div class="col-12 col-lg-5 mb-4 mb-lg-0" data-aos="fade-down">
+                        <img src="static/picture/img-1.jpg" alt="img" loading="lazy" class="img-fluid w-100">
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="mt-2" data-aos="fade-left">
+                            <p class="mb-0"><strong>Phone:</strong></p>
+                            <p><a class="hover-underline" href="tel:123456789"></a>+1 (234) 5678-9999</p>
+                        </div>
+                        <div class="mt-2" data-aos="fade-left" data-aos-delay="50">
+                            <p class="mb-0"><strong>Email:</strong></p>
+                            <p><a class="hover-underline" href="mailto:email@example.com">email@example.com</a></p>
+                        </div>
+                        <div class="mt-2" data-aos="fade-left" data-aos-delay="100">
+                            <p class="mb-0"><strong>Address:</strong></p>
+                            <p>180 East 45th Street 17NO
+                                New York, NY 10065</p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-delay="150">
+                            <a class="btn btn-mode" href="static/file/cv.pdf" download><i class="bi bi-filetype-pdf me-2"></i>Download
+                                CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section pt-5 pt-lg-6" data-aos="fade-up">
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-12 col-lg-4">
+                <div class="sticky-lg-top top-20">
+                    <div class="widget mb-5 mb-lg-7">
+                        <div class="hero-caption hero-caption-2">
+                            <h2 class="h4 text-uppercase">About Me</h2>
+                        </div>
+                        <p class="opacity-75">I am a passionate UI/UX designer dedicated to creating intuitive and
+                            engaging
+                            user experiences.
+                            With a keen eye for detail and a deep understanding of user-centered design principles,
+                            I strive to transform complex ideas into simple, visually appealing interfaces.
+                        </p>
+                    </div>
+                    <div class="widget mb-5 mb-lg-7">
+                        <div class="hero-caption hero-caption-2">
+                            <h2 class="h4 text-uppercase">Education</h2>
+                        </div>
+                        <div class="mt-4">
+                            <p class="fs-14 mb-1">2014 - 2016</p>
+                            <h3 class="h6 mb-2">Master of Fine Arts in UI/UX Design</h3>
+                            <p class="opacity-75">New York School of Visual Communication</p>
+                        </div>
+                        <div class="mt-4">
+                            <p class="fs-14 mb-1">2014 - 2016</p>
+                            <h3 class="h6 mb-2">Master of Arts in Interaction Design</h3>
+                            <p class="opacity-75">New York School of Visual Communication</p>
+                        </div>
+                        <div class="mt-4">
+                            <p class="fs-14 mb-1">2012 - 2014</p>
+                            <h3 class="h6 mb-2">Master of Design in User-Centered Design</h3>
+                            <p class="opacity-75">New York School of Visual Communication</p>
+                        </div>
+                    </div>
+                    <div class="widget mb-5 mb-lg-7">
+                        <div class="hero-caption hero-caption-2">
+                            <h2 class="h4 text-uppercase">Skills</h2>
+                        </div>
+                        <div class="mt-4">
+                            <p class="mb-1">PhotoShop</p>
+                            <div class="progress" role="progressbar" aria-label="example" aria-valuenow="99" aria-valuemin="0" aria-valuemax="99">
+                                <div class="progress-bar progress-bar-striped bg-primary text-black" style="width: 99%">
+                                    99%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="mb-1">Illustrator</p>
+                            <div class="progress" role="progressbar" aria-label="example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">
+                                <div class="progress-bar progress-bar-striped bg-primary text-black" style="width: 80%">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="mb-1">Indesign</p>
+                            <div class="progress" role="progressbar" aria-label="example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85">
+                                <div class="progress-bar progress-bar-striped bg-primary text-black" style="width: 85%">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="mb-1">After Effect</p>
+                            <div class="progress" role="progressbar" aria-label="example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="65">
+                                <div class="progress-bar progress-bar-striped bg-primary text-black" style="width: 65%">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="sticky-lg-top top-20">
+                    <div class="widget mb-5 mb-lg-7">
+                        <div class="hero-caption hero-caption-2">
+                            <h2 class="h4 text-uppercase">Experience</h2>
+                        </div>
+                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
+                            <p class="fs-14 mb-1">Freelancer</p>
+                            <h3 class="h6 mb-2">Senior UI/UX Designer - Present</h3>
+                            <p class="opacity-75 mb-0">I am a passionate UI/UX designer dedicated to creating intuitive and
+                                engaging user experiences. My work blends creativity with functionality, ensuring that
+                                every
+                                project not only looks great but also meets the needs of its users. </p>
+                        </div>
+                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
+                            <p class="fs-14 mb-1">Elevat Design Co.</p>
+                            <h3 class="h6 mb-2">Senior UI/UX Designer - 2020</h3>
+                            <p class="opacity-75 mb-0">I am a passionate UI/UX designer dedicated to creating intuitive and
+                                engaging user experiences. My work blends creativity with functionality, ensuring that
+                                every
+                                project not only looks great but also meets the needs of its users. </p>
+                        </div>
+                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
+                            <p class="fs-14 mb-1">Elevat Design Co.</p>
+                            <h3 class="h6 mb-2">UI/UX Designer - 2019</h3>
+                            <p class="opacity-75 mb-0">I am a passionate UI/UX designer dedicated to creating intuitive and
+                                engaging user experiences. My work blends creativity with functionality, ensuring that
+                                every
+                                project not only looks great but also meets the needs of its users. </p>
+                        </div>
+                    </div>
+                    <div class="widget mb-5 mb-lg-7">
+                        <div class="hero-caption hero-caption-2">
+                            <h2 class="h4 text-uppercase">Hobbies</h2>
+                        </div>
+                        <div>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Music</span>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Photography</span>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Playing Sports</span>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Gaming</span>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Traveling</span>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Attending Workshops or Meetups</span>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Building Personal Projects</span>
+                            <span class="rounded-4 px-3 py-2 fs-14 me-2 mb-2 d-inline-block text-bg-primary text-black">Digital Illustration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section Testimonial-->
+<section class="section section-no-break position-relative overflow-hidden" data-aos="fade">
+    <div class="container">
+        <!--Section Testimonials-->
+<div class="container container-sm position-relative z-index-1">
+    <div class="hero-slider">
+        <div class="swiper-container overflow-hidden" data-slide='{
+                        "slidesPerView": 3,
+                         "speed": 800,
+                        "autoplay": {"delay": 3000},
+                        "loop": false,
+                        "autoHeight": false,
+                        "lazy": true,
+                        "spaceBetween": 0,
+                                "navigation": {"nextEl": ".cs-swiper-button-next3", "prevEl": ".cs-swiper-button-prev3"},
+                                "pagination": {"el": ".swiper-pagination", "clickable": true, "type": "fraction"},
+                                "breakpoints": {
+                                        "0": { "slidesPerView": 1, "spaceBetween": 30 },
+                                        "576": {"slidesPerView": 1,"spaceBetween": 30 },
+                                        "768": { "slidesPerView": 2, "spaceBetween": 30},
+                                         "992": { "slidesPerView": 2,"spaceBetween": 50},
+                                        "1200": {"slidesPerView": 3,"spaceBetween": 50 }
+                                        }
+                    }'>
+            <div class="swiper-wrapper">
+                
+                
+                <div class="swiper-slide item-with-top-image position-relative h-100 min-height-450 ">
+                    <div class="image">
+                        <img src="static/picture/avatar-1.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="div-bottom text-center d-flex flex-column justify-content-between h-100 border rounded-4 p-4 p-lg-5">
+                        <div class="clearfix">
+                            <div class="d-flex align-items-center justify-content-center mb-3 text-primary">
+                                                <span class="star-rating d-flex align-items-center">
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                </span>
+                            </div>
+                            <h3 class="mb-4 h5">We couldn't be happier with the outcome!</h3>
+                            <p class="mb-3 mb-lg-5 opacity-75">
+                                Working with your company was an absolute pleasure! Their design team brought our vision to life with precision and creativity. We couldn't be happier with the results!
+                            </p>
+                        </div>
+                        <p class="d-flex align-items-center flex-wrap justify-content-center mb-0">
+                            <span class="fw-semibold ">Jasper Stone</span><span class="mx-2 border-1 border border-end py-2 opacity-75"></span>
+                            <span class="opacity-75 fs-14">Web Developer</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide item-with-top-image position-relative h-100 min-height-450 ">
+                    <div class="image">
+                        <img src="static/picture/avatar-2.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="div-bottom text-center d-flex flex-column justify-content-between h-100 border rounded-4 p-4 p-lg-5">
+                        <div class="clearfix">
+                            <div class="d-flex align-items-center justify-content-center mb-3 text-primary">
+                                                <span class="star-rating d-flex align-items-center">
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                </span>
+                            </div>
+                            <h3 class="mb-4 h5">We couldn't be happier with the outcome!</h3>
+                            <p class="mb-3 mb-lg-5 opacity-75">
+                                From start to finish, your company provided exceptional design services. Their attention to detail and commitment to understanding our brand made all the difference.
+                            </p>
+                        </div>
+                        <p class="d-flex align-items-center flex-wrap justify-content-center mb-0">
+                            <span class="fw-semibold ">Luna Evergreen</span><span class="mx-2 border-1 border border-end py-2 opacity-75"></span>
+                            <span class="opacity-75 fs-14">Product Designer</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide item-with-top-image position-relative h-100 min-height-450 ">
+                    <div class="image">
+                        <img src="static/picture/avatar-3.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="div-bottom text-center d-flex flex-column justify-content-between h-100 border rounded-4 p-4 p-lg-5">
+                        <div class="clearfix">
+                            <div class="d-flex align-items-center justify-content-center mb-3 text-primary">
+                                                <span class="star-rating d-flex align-items-center">
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                </span>
+                            </div>
+                            <h3 class="mb-4 h5">We couldn't be happier with the outcome!</h3>
+                            <p class="mb-3 mb-lg-5 opacity-75">
+                                I was blown away by the professionalism and talent of your company. They exceeded our expectations with their innovative designs and quick turnaround time. Five stars!
+                            </p>
+                        </div>
+                        <p class="d-flex align-items-center flex-wrap justify-content-center mb-0">
+                            <span class="fw-semibold ">Ava Silver</span><span class="mx-2 border-1 border border-end py-2 opacity-75"></span>
+                            <span class="opacity-75 fs-14">Co-founder</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide item-with-top-image position-relative h-100 min-height-450 ">
+                    <div class="image">
+                        <img src="static/picture/avatar-4.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="div-bottom text-center d-flex flex-column justify-content-between h-100 border rounded-4 p-4 p-lg-5">
+                        <div class="clearfix">
+                            <div class="d-flex align-items-center justify-content-center mb-3 text-primary">
+                                                <span class="star-rating d-flex align-items-center">
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                </span>
+                            </div>
+                            <h3 class="mb-4 h5">We couldn't be happier with the outcome!</h3>
+                            <p class="mb-3 mb-lg-5 opacity-75">
+                                Choosing your company for our design needs was one of the best decisions we made. Their team's expertise and collaborative approach made the entire process seamless.
+                            </p>
+                        </div>
+                        <p class="d-flex align-items-center flex-wrap justify-content-center mb-0">
+                            <span class="fw-semibold ">Leo Nightingale</span><span class="mx-2 border-1 border border-end py-2 opacity-75"></span>
+                            <span class="opacity-75 fs-14">Web Developer</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide item-with-top-image position-relative h-100 min-height-450 ">
+                    <div class="image">
+                        <img src="static/picture/avatar-1.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="div-bottom text-center d-flex flex-column justify-content-between h-100 border rounded-4 p-4 p-lg-5">
+                        <div class="clearfix">
+                            <div class="d-flex align-items-center justify-content-center mb-3 text-primary">
+                                                <span class="star-rating d-flex align-items-center">
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                    <i class="mx-1 bi bi-star-fill"></i>
+                                                </span>
+                            </div>
+                            <h3 class="mb-4 h5">We couldn't be happier with the outcome!</h3>
+                            <p class="mb-3 mb-lg-5 opacity-75">
+                                I can't thank your company enough for their outstanding design work. They transformed our ideas into stunning visuals that perfectly captured the essence of our brand.
+                            </p>
+                        </div>
+                        <p class="d-flex align-items-center flex-wrap justify-content-center mb-0">
+                            <span class="fw-semibold ">Scarlett Rosewood</span><span class="mx-2 border-1 border border-end py-2 opacity-75"></span>
+                            <span class="opacity-75 fs-14">Product Designer</span>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hero-action-1 mt-4 mt-lg-5 justify-content-center">
+    <div class="d-flex align-items-center">
+        <!-- next / prev arrows -->
+        <div class="cs-swiper-button cs-swiper-button-prev cs-swiper-button-prev3">
+            <i class="bi bi-arrow-left fs-18 lh-0 "></i>
+        </div>
+        <!-- pagination dots -->
+        <div class="swiper-pagination "></div>
+        <!-- end pagination dots -->
+        <div class="cs-swiper-button cs-swiper-button-next cs-swiper-button-next3">
+            <i class="bi bi-arrow-right fs-18 lh-0 "></i>
+        </div>
+        <!-- !next / prev arrows -->
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+</section>
+<!--End Section Testimonial-->
+            <!-- end section -->
+            <!-- Start footer section -->
+            <footer class="section pb-5 overflow-x-hidden border-top">
+                <div class="container">
+                    <ul class="nav list-unstyled mb-5 mb-xxl-7">
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="portfolio1.html">Portfolio</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="pricing1.html">Services</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="contact1.html">Contact</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="shop1.html">Shop</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-lg-7 mb-5">
+                            <div data-aos="flip-down" data-aos-delay="100">
+                                <div class="dark-v">
+                                    <img src="static/picture/name-logo.svg" alt="img" class="img-fluid w-100">
+                                </div>
+                                <div class="light-v">
+                                    <img src="static/picture/name-logo-dark.svg" alt="img" class="img-fluid w-100">
+                                </div>
+                            </div>
+                            <p class="mt-3">Copyright &copy; 2024.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                        </div>
+                        <div class="col-12 col-xxl-4">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-3">
+                                    <h3 class="fs-16 mb-4">Language</h3>
+                                    <ul class="list-unstyled mb-5">
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#">En</a>
+                                        </li>
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#">Fr</a>
+                                        </li>
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#">Ru</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-3">
+                                    <h3 class="fs-16 mb-4">Socials</h3>
+                                    <ul class="list-unstyled mb-5">
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#"><i class="bi bi-instagram me-1"></i>Instagram</a>
+                                        </li>
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#"><i class="bi bi-facebook me-1"></i>Facebook</a>
+                                        </li>
+
+                                        <li class="d-block mt-2">
+                                            <a class="hover-underline fs-14" href="#"><i class="bi bi-pinterest me-1"></i>Pinterest</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h3 class="fs-16 mb-4">Info</h3>
+                                    <p>We provide great services for our customers based on needs</p>
+                                    <a class="btn btn-icon btn-primary fs-14 btn-sm" href="#">Contact Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End footer section -->
+        </div>
+    </div>
+</main>
+<!-- Start footer include -->
+<!--Back to top -->
+<a href="#" aria-label="Back to top" class="js-back-to-top back-to-top d-flex flex-column align-items-center">
+    <i class="bi bi-arrow-up mb-2 text-center"></i>
+</a>
+<!--End Back to top -->
+<!--Settings -->
+<div class="fixed-top shadow-sm" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
+    <div class="settings" role="group" aria-label="Basic outlined example">
+        <div class="settings-action">
+            <div class="js-settings cursor-pointer bg-body">
+                <span class="icon-light" data-bs-theme-value="light">
+                     <i class="bi bi-sun"></i>
+                </span>
+                <span class="icon-dark" data-bs-theme-value="dark">
+                     <i class="bi bi-moon"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <a aria-label="link" class="settings-more text-decoration-none bg-body position-relative border-top-0" href="shopping-cart1.html">
+        <i class="bi bi-bag"></i><span class="badge bg-primary text-black position-absolute mb-4 end-0 fs-10">03</span>
+    </a>
+    <a class="bg-body position-relative fs-14" href="index.html">
+        <span class="fs-14">LTR</span>
+    </a>
+</div>
+<!--End Settings -->
+
+
+<!-- End footer include -->
+<!-- javascript libraries -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/dark-mode.js"></script>
+<script src="static/js/imagesloaded.pkgd.min.js"></script>
+<script src="static/js/swiper-bundle.min.js"></script>
+<script src="static/js/form-validation.js"></script>
+<script src="static/js/card.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/aos.js"></script>
+<script src="static/js/typed.umd.js"></script>
+<script src="static/js/custom.js"></script>
+<!-- end javascript libraries -->
+</body>
+</html>

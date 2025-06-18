@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="static/css/css2.css" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="static/css/photoswipe.css">
+<link rel="stylesheet" href="static/css/card.css">
+<link rel="stylesheet" href="static/css/aos.css">
+<link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/css/bootstrap.css">
+<link rel="stylesheet" href="static/css/main.css">
+<title>Libin Fan | Portfolio</title>
+</head>
+<body>
+<!-- Start include modal, offcanvas, etc...  -->
+<!--Modal Photo Swipe -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" aria-label="Fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Login/Register -->
+<div class="modal fade" id="AddToCart" aria-hidden="true" aria-labelledby="AddToCart" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center px-5 py-3">
+                <h2 class="h4">Your Cart</h2>
+                <button type="button" class="btn-close position-absolute end-0 me-4" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                    <!--Item Product-->
+
+
+
+<!--Item product
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product.html">
+                <img alt="img" src="static/picture/portfolio-1.jpg" loading="lazy" class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a href="product.html"><span>Business - Beauty, Cosmetics Store WooCommerce WordPress</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none" href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+Item product-->
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product.html">
+                <img alt="img" src="static/picture/portfolio-3.jpg" loading="lazy" class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a href="product.html"><span>Loea - Beauty, Cosmetics Store WooCommerce WordPress</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none" href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+
+<li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
+    <div class="row gx-3 flex-wrap">
+        <div class="col-3">
+            <a aria-label="link" class="overflow-hidden d-inline-block" href="product.html">
+                <img alt="img" src="static/picture/portfolio-4.jpg" loading="lazy" class="img-fluid ">
+            </a>
+        </div>
+        <div class="col-9 d-flex justify-content-between align-items-center">
+            <div class="row gx-3 w-100">
+                <div class="col-12 col-sm-10">
+                    <h3 class="mb-2 card-title h6"><a href="product.html"><span>Shuide - Responsive Landing Bootstrap 5 Template + RTL</span></a></h3>
+                    <div class="mb-2 product-price fs-14 fw-bold">
+                        <span>$79.00</span>
+                        <del class="ms-1 opacity-75 fs-12">$89.00</del>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 text-end">
+                    <a aria-label="link" class="text-decoration-none" href="#">
+                       <i class="bi bi-x fs-20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+
+
+                </ul>
+            </div>
+            <div class="modal-footer border-top">
+                <div class="d-flex flex-nowrap justify-content-between align-items-center mb-2 w-100">
+                    <p class="mb-1">Subtotal:</p>
+                    <h5>$480.00</h5>
+                </div>
+
+                <a aria-label="link" class="btn btn-primary btn-icon w-100" href="checkout.html"><span>Continue to Checkout</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Margic cursor -->
+<div class="cursor"></div>
+<!-- End Margic cursor -->
+<!-- End include modal, offcanvas, etc...  -->
+<main>
+    <div class="col-wrap">
+        <div class="col-sidebar bg-body-tertiary px-2 py-0 p-sm-3 text-center have-mockup-1" data-aos="fade-right">
+            <!-- Start Header -->
+            <div class="d-flex justify-content-between align-items-center d-sm-none">
+                <div class="d-inline-block py-2">
+                    <div class="hamburger-menu style-bg" data-toggle="modal" data-bs-toggle="offcanvas" data-bs-target="#MenuCanvas" aria-controls="MenuCanvas">
+    <div class="hamburger-inner">
+        <span></span>
+    </div>
+</div>
+                </div>
+                <div class="d-inline-block" data-aos="fade-left" data-aos-delay="50">
+                    <a class="btn btn-icon btn-primary btn-sm" href="#">Get it touch</a>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-viewdesktop offcanvas-menu offcanvas-start border-0 mx-auto" tabindex="-1" id="MenuCanvas" aria-labelledby="MenuCanvas">
+                <div class="offcanvas-header border-bottom">
+                    <!--Heading-->
+                    <div class="w-50">
+                        <div class="dark-v">
+                            <!--Brand-->
+                            <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                                <img alt="img" src="static/picture/logo.png" loading="lazy" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="light-v">
+                            <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                                <img alt="img" src="static/picture/logo-white.png" loading="lazy" class="img-fluid ">
+                            </a>
+                        </div>
+                    </div>
+                    <!--Button Close-->
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav-canvas">
+                        <!-- Start navigation -->
+<div class="border-bottom pb-4 mb-4">
+        <div class="avatar mb-2 px-5">
+            <div class="rounded-circle overflow-hidden bg-body-tertiary">
+                <a href="index.html">
+                    <img src="static/picture/avatar.png" alt="img" class="img-fluid">
+                </a>
+
+            </div>
+        </div>
+        <div class="mt-2">
+            <h5 class="mb-0 fw-bold">Libin Fan</h5>
+            <p class="opacity-75 fs-12">UI/UX Researcher & Designer</p>
+        </div>
+    <!--Socials-->
+<ul class="list-inline list-inline-circle mb-0 d-flex align-items-center justify-content-center">
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="https://www.linkedin.com/in/libfan/"><i class="list-inline-social-icon bi bi-linkedin"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="https://x.com/aller_sen"><i class="list-inline-social-icon bi bi-twitter-x"></i></a></li>
+    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="https://github.com/bin0520"><i class="list-inline-social-icon bi bi-github"></i></a></li>
+</ul>
+<!--End Socials-->
+
+
+</div>
+<ul class="navbar-nav navbar-nav-menu flex-wrap text-start ">
+   <li class="active">
+        <a aria-label="link" class="nav-link" href="index.html"><i class="bi bi-person-plus me-2"></i>About Me</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="portfolio.html"><i class="bi bi-ui-radios-grid me-2"></i>Portfolio <span class="badge float-end">4</span></a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="resume.html"><i class="bi bi-filetype-pdf me-2"></i>Resume</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="contact.html"><i class="bi bi-geo-alt me-2"></i>Contact</a>
+    </li>
+    <li>
+        <a aria-label="link" class="nav-link" href="blog.html"><i class="bi bi-sticky me-2"></i>Writings</a>
+    </li>
+</ul>
+<!-- End navigation -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+        </div>
+        <div class="col-content" data-aos="fade">
+            <!-- start section -->
+            <section class="section section-no-break pt-8 pb-5 pb-lg-8">
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+        <article class="mx-auto" style="max-width: 800px; width: 100%; text-align: left;">
+            <h1 style="text-align:center;">Mango Try: Mobile and digital design for JD.com</h1>
+            <h4 style="text-align:center;">👩‍🎓My role: lead UX researcher and designer</h4>
+            <hr style="border: 1px solid #ccc; margin: 40px 0;">
+            <section>
+                <p>At the end of 2014, <a href="https://www.jd.com" target="_blank" rel="noopener">JD</a>, a leading
+                    e-commerce company in China, proposed the "3F" strategy
+                    for rural e-commerce. In early 2016, JD
+                    signed the Strategic Cooperation Framework Agreement on
+                    Targeted E-Commerce Poverty Alleviation with
+                    the State Council Leading Group Office of Poverty
+                    Alleviation and Development.</p>
+                <p>In 2006, our team collaborated with JD to help client the
+                    government of <a href="https://en.wikipedia.org/wiki/Tiandong_County" target="_blank"
+                        rel="noopener">Tiandong
+                        County</a>, Guangxi, China to develop a digital
+                    mobile application to promote their mango
+                    products. We designed a module called <strong>Mango Try</strong>,
+                    which incoporate entertainment features, product sells,
+                    product information, and product reviews on JD.com and
+                    JD mobile application.
+                </p>
+                <div style="height: 20px;"></div>
+                <h4>Timeframe</h4>
+                <p> March 2016 - September 2016</p>
+                <div style="height: 20px;"></div>
+                <h4>UX Skills</h4>
+                <ul class="custom-list">
+                    <li>Persona</li>
+                    <li>Market research</li>
+                    <li>Design</li>
+                    <li>Wireframing</li>
+                </ul>
+                <div style="height: 20px;"></div>
+                <h4>Tools</h4>
+                <ul class="custom-list">
+                    <li>Figma</li>
+                </ul>
+            </section>
+            <hr style="border: 1px solid #ccc; margin: 40px 0;">
+            <section>
+                <h3>Challenge</h3>
+                <p>While Tiandong County is well known for its mangoes, the
+                    local government recognized the need to
+                    evolve in the digital age. Embracing technology had
+                    become urgent, prompting them to develop a
+                    mobile application to promote their mango products and
+                    expand their market reach—especially among
+                    younger generations.</p>
+                <div style="height: 20px;"></div>
+                <p>Through marketing research, we tried to understand target
+                    buyers' needs and pain points of online shopping. Most
+                    of them concerns centered around the convinience,
+                    freshness of products, and the shipping fees.</p>
+
+                       <div style="height: 20px;"></div>
+                <div style="text-align:center; margin: 32px 0;">
+                    <img src="static/picture/swot.png" alt="Sample Data" style="max-width:80%; height:auto;">
+                    <div style="color: #888; font-size: 0.98em; margin-top: 8px;">SWOT
+                        was used to analyze strengths and
+                        weaknesses</div>
+                </div>
+
+                                <div style="text-align:center; margin: 32px 0;">
+                    <img src="static/picture/mango_persona.png" alt="Sample Data" style="max-width:80%; height:auto;">
+                    <div style="color: #888; font-size: 0.98em; margin-top: 8px;">We
+                        developed buyer personas to truly and accurately
+                        target marketing communications</div>
+                </div>
+
+                 <div style="text-align:center; margin: 32px 0;">
+                    <img src="static/picture/pain_point.png" alt="Pain Point" style="max-width:80%; height:auto;">
+                    <div style="color: #888; font-size: 0.98em; margin-top: 8px;">Consumers'
+                        pain points based on market surveys</div>
+                </div>
+
+            </section>
+            <hr style="border: 1px solid #ccc; margin: 40px 0;">
+            <section>
+                <h3>Design Principles</h3>
+                <p>We put together a set of 5 design principles that our
+                    team referred to constantly throughout the project.
+                    "<strong>Trust and transparency</strong>" was one of our
+                    most important principles. We wanted to create a sense
+                    of trust and transparency between users and the product,
+                    as many of them were not familiar with the product or
+                    lacked of trust in online fresh food markets.</p>
+                     <div style="text-align:center; margin: 32px 0;">
+                    <img src="static/picture/principles.png" alt="Design Principles" style="max-width:120%; height:auto;">
+                </div>
+                <div style="height: 20px;"></div>
+                <h3>Prototyping & Usability Testing</h3>
+                <div style="text-align:center; margin: 32px 0;">
+                    <img src="static/picture/prototyping.png" alt="Prototyping Example" style="max-width:80%; height:auto;">
+                </div>
+                <p>We also designed a interactive game module to encourage
+                    users to play, earn credit and cash the reward for
+                    products.</p>
+
+                    <div style="display: flex; justify-content: center; gap: 24px; margin: 32px 0; flex-wrap: wrap;">
+                    <img src="istatic/picture/Picture1.jpg" alt="Game Screenshot 1"
+                        style="max-width:30%; height:auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);">
+                    <img src="static/picture/Picture2.jpg" alt="Game Screenshot 2"
+                        style="max-width:30%; height:auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);">
+                    <img src="static/picture/Picture3.jpg" alt="Game Screenshot 3"
+                        style="max-width:30%; height:auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);">
+                    </div>
+                <div style="height: 60px;"></div>
+                <h3>Outcome</h3>
+                <p>We created a details project plan including marketing research and analysis, design, prototyping, and
+                    user testing. </p>
+                 <div style="text-align:center; margin: 32px 0;">
+                    <img src="static/picture/report.png" alt="Project Plan Report" style="max-width:100%; height:auto;">
+                </div>
+                <p>Our project won the <strong>JD.com Best Design Award</strong> in 2016. Judges were highly impressed
+                    by our entertainment module and the game design, which made our app more interactive and engaging.
+                    They also lauded our attention to detail and users' needs in trust and transparency.</p>
+
+                    <div style="text-align:center; margin: 32px 0;">
+                    <img src="static/picture/award.jpg" alt="JD.com Best Design Award Certificate"
+                        style="max-width:180px; height:auto; display:block; margin:0 auto 8px auto;">
+                    <span style="display:block; color:#333; font-weight:bold; margin-top:8px;">JD.com Best Design Award
+                        Certificate</span>
+                </div>
+                <div style="height: 60px;"></div>
+                <h3
+                    style="background-color: #c6d7c8; font-style: italic; padding: 18px 24px; border-radius: 8px 8px 0 0; margin: 24px 0 0 0;">
+                    Takeaways</h3>
+                <p
+                    style="background-color: #c6d7c8; font-style: italic; padding: 18px 24px; border-radius: 0 0 8px 8px; margin: 0 0 24px 0;">
+                    This was a great challenge as it took me on the path to designing for mobile apps, so quite a few
+                    lessons were learned. I began involving diverse audiences and accessible features in my designs
+                    which has been a journey of learning about their diverse needs. I also began understanding the
+                    constraints of creating an app and the layout, which both need thoughtful consideration for all
+                    users in order for a great experience to be had.</p>
+            </section>
+        </article>
+    </div>
+</section>
+            <!-- end section -->
+            <!-- Start footer section -->
+            <footer class="section pb-5 overflow-x-hidden border-top">
+                <div class="container">
+                    <ul class="nav list-unstyled mb-5 mb-xxl-7">
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="https://drive.google.com/file/d/1JVT4iGX7je-rFjG8XdoNt7ObQ0_juSvI/view?usp=sharing">Résumé</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="blog.html">Writings</a>
+                        </li>
+                    </ul>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-lg-7 mb-5">
+                            <div data-aos="flip-down" data-aos-delay="100">
+
+                            </div>
+                            <p class="mt-3">Copyright &copy; 2024.Libin Fan All rights reserved.<a target="" href=""></a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+            <!-- End footer section -->
+        </div>
+    </div>
+</main>
+<!-- Start footer include -->
+<!--Back to top -->
+<a href="#" aria-label="Back to top" class="js-back-to-top back-to-top d-flex flex-column align-items-center">
+    <i class="bi bi-arrow-up mb-2 text-center"></i>
+</a>
+<!--End Back to top -->
+<!--Settings -->
+<div class="fixed-top shadow-sm" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
+    <div class="settings" role="group" aria-label="Basic outlined example">
+        <div class="settings-action">
+            <div class="js-settings cursor-pointer bg-body">
+                <span class="icon-light" data-bs-theme-value="light">
+                     <i class="bi bi-sun"></i>
+                </span>
+                <span class="icon-dark" data-bs-theme-value="dark">
+                     <i class="bi bi-moon"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!--End Settings -->
+
+
+<!-- End footer include -->
+<!-- javascript libraries -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/dark-mode.js"></script>
+<script src="static/js/imagesloaded.pkgd.min.js"></script>
+<script src="static/js/swiper-bundle.min.js"></script>
+<script src="static/js/form-validation.js"></script>
+<script src="static/js/card.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/aos.js"></script>
+<script src="static/js/typed.umd.js"></script>
+<script src="static/js/custom.js"></script>
+<!-- end javascript libraries -->
+</body>
+</html>
