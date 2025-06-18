@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
     <!-- Required meta tags -->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="static/picture/favicon.png">
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="static/css/css2.css" rel="stylesheet">
-<!-- CSS -->
-<link rel="stylesheet" href="static/css/swiper-bundle.min.css">
-<link rel="stylesheet" href="static/css/photoswipe.css">
-<link rel="stylesheet" href="static/css/card.css">
-<link rel="stylesheet" href="static/css/aos.css">
-<link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
-<link rel="stylesheet" href="static/css/bootstrap.css">
-<link rel="stylesheet" href="static/css/main.css">
-<title>Libin Fan Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="static/picture/favicon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="static/css/css2.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/css/photoswipe.css">
+    <link rel="stylesheet" href="static/css/card.css">
+    <link rel="stylesheet" href="static/css/aos.css">
+    <link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Libin Fan Portfolio</title>
 </head>
+
 <body>
-<!-- Start include modal, offcanvas, etc...  -->
-<!--Modal Photo Swipe -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe.
+    <!-- Start include modal, offcanvas, etc...  -->
+    <!--Modal Photo Swipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe.
             It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" aria-label="Fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"
+                        aria-label="Fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal Login/Register -->
-<div class="modal fade" id="AddToCart" aria-hidden="true" aria-labelledby="AddToCart" tabindex="-1">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header justify-content-center px-5 py-3">
-                <h2 class="h4">Your Cart</h2>
-                <button type="button" class="btn-close position-absolute end-0 me-4" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <ul class="list-group list-group-flush">
-                    <!--Item Product-->
+    <!-- Modal Login/Register -->
+    <div class="modal fade" id="AddToCart" aria-hidden="true" aria-labelledby="AddToCart" tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center px-5 py-3">
+                    <h2 class="h4">Your Cart</h2>
+                    <button type="button" class="btn-close position-absolute end-0 me-4" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <!--Item Product-->
 
 
 
-<!--Item product
+                        <!--Item product
 <li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
     <div class="row gx-3 flex-wrap">
         <div class="col-3">
@@ -108,7 +112,7 @@
 </li>
 -->
 
-<!--Item product
+                        <!--Item product
 <li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
     <div class="row gx-3 flex-wrap">
         <div class="col-3">
@@ -136,7 +140,7 @@
 </li>
 
 -->
-<!--Item product
+                        <!--Item product
 <li class="list-group-item hover-scale-image px-0 pb-3 pt-0 mb-3 ">
     <div class="row gx-3 flex-wrap">
         <div class="col-3">
@@ -165,171 +169,213 @@
 
 
 End Item Product-->
-                </ul>
-            </div>
-            <div class="modal-footer border-top">
-                <div class="d-flex flex-nowrap justify-content-between align-items-center mb-2 w-100">
-                    <p class="mb-1">Subtotal:</p>
-                    <h5>$480.00</h5>
+                    </ul>
                 </div>
-                <!--link-->
-                <a aria-label="link" class="btn btn-primary btn-icon w-100" href=""><span>Continue to Checkout</span></a>
+                <div class="modal-footer border-top">
+                    <div class="d-flex flex-nowrap justify-content-between align-items-center mb-2 w-100">
+                        <p class="mb-1">Subtotal:</p>
+                        <h5>$480.00</h5>
+                    </div>
+                    <!--link-->
+                    <a aria-label="link" class="btn btn-primary btn-icon w-100" href=""><span>Continue to
+                            Checkout</span></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Margic cursor -->
-<div class="cursor"></div>
-<!-- End Margic cursor -->
-<!-- End include modal, offcanvas, etc...  -->
-<main>
-    <div class="col-wrap">
-        <div class="col-sidebar bg-body-tertiary px-2 py-0 p-sm-3 text-center have-mockup-1" data-aos="fade-right">
-            <!-- Start Header -->
-            <div class="d-flex justify-content-between align-items-center d-sm-none">
-                <div class="d-inline-block py-2">
-                    <div class="hamburger-menu style-bg" data-toggle="modal" data-bs-toggle="offcanvas" data-bs-target="#MenuCanvas" aria-controls="MenuCanvas">
-    <div class="hamburger-inner">
-        <span></span>
-    </div>
-</div>
-                </div>
-                <div class="d-inline-block" data-aos="fade-left" data-aos-delay="50">
-                    <a class="btn btn-icon btn-primary btn-sm" href="index.html">BACK TO HOME</a>
-                </div>
-            </div>
-            <div class="offcanvas offcanvas-viewdesktop offcanvas-menu offcanvas-start border-0 mx-auto" tabindex="-1" id="MenuCanvas" aria-labelledby="MenuCanvas">
-                <div class="offcanvas-header border-bottom">
-                    <!--Heading-->
-                    <div class="w-50">
-                        <div class="dark-v">
-                            <!--Brand-->
-
-                        <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
-                                <img alt="img" src="static/picture/logo.png" loading="lazy" class="img-fluid ">
-                            </a>
-                        </div>
-                        <div class="light-v">
-                            <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
-                                <img alt="img" src="static/picture/logo-white.png" loading="lazy" class="img-fluid ">
-                            </a>
+    <!-- Margic cursor -->
+    <div class="cursor"></div>
+    <!-- End Margic cursor -->
+    <!-- End include modal, offcanvas, etc...  -->
+    <main>
+        <div class="col-wrap">
+            <div class="col-sidebar bg-body-tertiary px-2 py-0 p-sm-3 text-center have-mockup-1" data-aos="fade-right">
+                <!-- Start Header -->
+                <div class="d-flex justify-content-between align-items-center d-sm-none">
+                    <div class="d-inline-block py-2">
+                        <div class="hamburger-menu style-bg" data-toggle="modal" data-bs-toggle="offcanvas"
+                            data-bs-target="#MenuCanvas" aria-controls="MenuCanvas">
+                            <div class="hamburger-inner">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
-                        <!-- Start navigation -->
-<div class="border-bottom pb-4 mb-4">
-        <div class="avatar mb-2 px-5">
-            <div class="rounded-circle overflow-hidden bg-body-tertiary">
-                <a href="">
-                    <img src="static/picture/avatar.png" alt="img" class="img-fluid">
-                </a>
-
-            </div>
-        </div>
-        <div class="mt-2">
-            <h5 class="mb-0 fw-bold">Libin Fan</h5>
-            <p class="opacity-75 fs-12">UI/UX Researcher & Designer</p>
-        </div>
-    <!--Socials-->
-<ul class="list-inline list-inline-circle mb-0 d-flex align-items-center justify-content-center">
-    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="https://www.linkedin.com/in/libfan/"><i class="list-inline-social-icon bi bi-linkedin"></i></a></li>
-    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="https://x.com/aller_sen"><i class="list-inline-social-icon bi bi-twitter-x"></i></a></li>
-    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link" href="https://github.com/bin0520"><i class="list-inline-social-icon bi bi-github"></i></a></li>
-</ul>
-<!--End Socials-->
-
-
-</div>
-<ul class="navbar-nav navbar-nav-menu flex-wrap text-start ">
-   <li class="active">
-        <a aria-label="link" class="nav-link" href=""><i class="bi bi-person-plus me-2"></i>About Me</a>
-    </li>
-    <li>
-        <a aria-label="link" class="nav-link" href="portfolio.html"><i class="bi bi-ui-radios-grid me-2"></i>Portfolio <span class="badge float-end">4</span></a>
-    </li>
-    <li>
-        <a aria-label="link" class="nav-link" href="resume.html"><i class="bi bi-filetype-pdf me-2"></i>Resume</a>
-    </li>
-    <li>
-        <a aria-label="link" class="nav-link" href="contact.html"><i class="bi bi-geo-alt me-2"></i>Contact</a>
-    </li>
-    <li>
-        <a aria-label="link" class="nav-link" href="blog.html"><i class="bi bi-sticky me-2"></i>Writings</a>
-    </li>
-</ul>
-<!-- End navigation -->
+                    <div class="d-inline-block" data-aos="fade-left" data-aos-delay="50">
+                        <a class="btn btn-icon btn-primary btn-sm" href="index.html">BACK TO HOME</a>
                     </div>
                 </div>
-            </div>
-            <!-- End Header -->
-        </div>
-        <div class="col-content" data-aos="fade">
-            <!-- start section -->
-            <section class="section pt-8 pt-sm-5">
-    <div class="container">
-        <!--breadcrumb-->
-        <div class="pb-5 border-bottom">
-            <div class="row d-flex justify-content-between align-items-end">
-                <div class="col-12 col-xxl-7">
-                    <ol class="breadcrumb ms-0 ms-lg-3 mb-0 ">
-                        <li class="breadcrumb-item"><a aria-label="link" href="index.html">About Me</a></li>
-                        <li class="breadcrumb-item">Writtings</li>
-                    </ol>
-                    <h2 class="h0 lh-0 mb-0">Writtings</h2>
-                </div>
-                <div class="col-12 col-xxl-5 mt-3">
-                    <div class="clearfix float-end">
-                        <p class="mb-4 fs-18 opacity-75">
-                            I like to observe the quiet details of everyday life and turn them into words. Writing helps me pause, reflect, and find meaning in both the ordinary and the unexpected.
-                        </p>
+                <div class="offcanvas offcanvas-viewdesktop offcanvas-menu offcanvas-start border-0 mx-auto"
+                    tabindex="-1" id="MenuCanvas" aria-labelledby="MenuCanvas">
+                    <div class="offcanvas-header border-bottom">
+                        <!--Heading-->
+                        <div class="w-50">
+                            <div class="dark-v">
+                                <!--Brand-->
+
+                                <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                                    <img alt="img" src="static/picture/logo.png" loading="lazy" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="light-v">
+                                <a aria-label="link" class="navbar-brand d-inline-block m-0" href="index.html">
+                                    <img alt="img" src="static/picture/logo-white.png" loading="lazy"
+                                        class="img-fluid ">
+                                </a>
+                            </div>
+                        </div>
+                        <!--Button Close-->
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav-canvas">
+                            <!-- Start navigation -->
+                            <div class="border-bottom pb-4 mb-4">
+                                <div class="avatar mb-2 px-5">
+                                    <div class="rounded-circle overflow-hidden bg-body-tertiary">
+                                        <a href="">
+                                            <img src="static/picture/avatar.png" alt="img" class="img-fluid">
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <h5 class="mb-0 fw-bold">Libin Fan</h5>
+                                    <p class="opacity-75 fs-12">UI/UX Researcher & Designer</p>
+                                </div>
+                                <!--Socials-->
+                                <ul
+                                    class="list-inline list-inline-circle mb-0 d-flex align-items-center justify-content-center">
+                                    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link"
+                                            href="https://www.linkedin.com/in/libfan/"><i
+                                                class="list-inline-social-icon bi bi-linkedin"></i></a></li>
+                                    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link"
+                                            href="https://x.com/aller_sen"><i
+                                                class="list-inline-social-icon bi bi-twitter-x"></i></a></li>
+                                    <li class="list-inline-item mx-1 w-auto fs-12"><a aria-label="link"
+                                            href="https://github.com/bin0520"><i
+                                                class="list-inline-social-icon bi bi-github"></i></a></li>
+                                </ul>
+                                <!--End Socials-->
+
+
+                            </div>
+                            <ul class="navbar-nav navbar-nav-menu flex-wrap text-start ">
+                                <li class="active">
+                                    <a aria-label="link" class="nav-link" href=""><i
+                                            class="bi bi-person-plus me-2"></i>About Me</a>
+                                </li>
+                                <li>
+                                    <a aria-label="link" class="nav-link" href="portfolio.html"><i
+                                            class="bi bi-ui-radios-grid me-2"></i>Portfolio <span
+                                            class="badge float-end">4</span></a>
+                                </li>
+                                <li>
+                                    <a aria-label="link" class="nav-link" href="resume.html"><i
+                                            class="bi bi-filetype-pdf me-2"></i>Resume</a>
+                                </li>
+                                <li>
+                                    <a aria-label="link" class="nav-link" href="contact.html"><i
+                                            class="bi bi-geo-alt me-2"></i>Contact</a>
+                                </li>
+                                <li>
+                                    <a aria-label="link" class="nav-link" href="blog.html"><i
+                                            class="bi bi-sticky me-2"></i>Writings</a>
+                                </li>
+                            </ul>
+                            <!-- End navigation -->
+                        </div>
                     </div>
                 </div>
+                <!-- End Header -->
             </div>
-        </div>
-        <!--end breadcrumb-->
-    </div>
-</section>
-<section class="section section-top pt-5">
-    <div class="container" data-aos="fade">
-        <div class="row">
-            <div class="col-12 col-xl-12">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5">
+            <div class="col-content" data-aos="fade">
+                <!-- start section -->
+                <section class="section pt-8 pt-sm-5">
+                    <div class="container">
+                        <!--breadcrumb-->
+                        <div class="pb-5 border-bottom">
+                            <div class="row d-flex justify-content-between align-items-end">
+                                <div class="col-12 col-xxl-7">
+                                    <ol class="breadcrumb ms-0 ms-lg-3 mb-0 ">
+                                        <li class="breadcrumb-item"><a aria-label="link" href="index.html">About Me</a>
+                                        </li>
+                                        <li class="breadcrumb-item">Writtings</li>
+                                    </ol>
+                                    <h2 class="h0 lh-0 mb-0">Writtings</h2>
+                                </div>
+                                <div class="col-12 col-xxl-5 mt-3">
+                                    <div class="clearfix float-end">
+                                        <p class="mb-4 fs-18 opacity-75">
+                                            I like to observe the quiet details of everyday life and turn them into
+                                            words. Writing helps me pause, reflect, and find meaning in both the
+                                            ordinary and the unexpected.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end breadcrumb-->
+                    </div>
+                </section>
+                <section class="section section-top pt-5">
+                    <div class="container" data-aos="fade">
+                        <div class="row">
+                            <div class="col-12 col-xl-12">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5">
 
 
 
-<div class="col h-100 mt-5">
-    <div class="card card-post bg-transparent ">
-        <div class="card-img-top overflow-hidden position-relative hover-scale-image rounded-4">
-            <a href="https://libfan.medium.com/the-period-that-matters-menstruation-illness-and-womens-bodies-3d67c162b2f5" data-aos="show">
-                <img alt="img" src="static/picture/blog-1.png" loading="lazy" class="img-fluid ">
-            </a>
-        </div>
-        <div class="pt-2 px-0">
-            <div class="content-top">
-                <h3 class="fs-18 my-3"><a href="https://libfan.medium.com/the-period-that-matters-menstruation-illness-and-womens-bodies-3d67c162b2f5"><span>The Period That Matters: Menstruation, Illness, and Women’s Bodies</span></a></h3>
-                <a class="hover-underline" href="https://libfan.medium.com/the-period-that-matters-menstruation-illness-and-womens-bodies-3d67c162b2f5">Read more <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
+                                    <div class="col h-100 mt-5">
+                                        <div class="card card-post bg-transparent ">
+                                            <div
+                                                class="card-img-top overflow-hidden position-relative hover-scale-image rounded-4">
+                                                <a href="https://libfan.medium.com/the-period-that-matters-menstruation-illness-and-womens-bodies-3d67c162b2f5"
+                                                    data-aos="show">
+                                                    <img alt="img" src="static/picture/blog-1.png" loading="lazy"
+                                                        class="img-fluid ">
+                                                </a>
+                                            </div>
+                                            <div class="pt-2 px-0">
+                                                <div class="content-top">
+                                                    <h3 class="fs-18 my-3"><a
+                                                            href="https://libfan.medium.com/the-period-that-matters-menstruation-illness-and-womens-bodies-3d67c162b2f5"><span>The
+                                                                Period That Matters: Menstruation, Illness, and Women’s
+                                                                Bodies</span></a></h3>
+                                                    <a class="hover-underline"
+                                                        href="https://libfan.medium.com/the-period-that-matters-menstruation-illness-and-womens-bodies-3d67c162b2f5">Read
+                                                        more <i class="bi bi-arrow-right ms-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
 
-<div class="col h-100 mt-5">
-    <div class="card card-post bg-transparent ">
-        <div class="card-img-top overflow-hidden position-relative hover-scale-image rounded-4">
-            <a href="https://libfan.medium.com/creating-in-the-cracks-motherhood-art-and-the-self-im-still-becoming-6e0c717fea04" data-aos="show">
-                <img alt="img" src="static/picture/blog-2.jpg" loading="lazy" class="img-fluid ">
-            </a>
-        </div>
-        <div class="pt-2 px-0">
-            <div class="content-top">
-                <h3 class="fs-18 my-3"><a href="https://libfan.medium.com/creating-in-the-cracks-motherhood-art-and-the-self-im-still-becoming-6e0c717fea04"><span>Creating in the Cracks: Motherhood, Art, and the Self I’m Still Becoming</span></a></h3>
-                <a class="hover-underline" href="https://libfan.medium.com/creating-in-the-cracks-motherhood-art-and-the-self-im-still-becoming-6e0c717fea04">Read more <i class="bi bi-arrow-right ms-1"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
+                                    <div class="col h-100 mt-5">
+                                        <div class="card card-post bg-transparent ">
+                                            <div
+                                                class="card-img-top overflow-hidden position-relative hover-scale-image rounded-4">
+                                                <a href="https://libfan.medium.com/creating-in-the-cracks-motherhood-art-and-the-self-im-still-becoming-6e0c717fea04"
+                                                    data-aos="show">
+                                                    <img alt="img" src="static/picture/blog-2.jpg" loading="lazy"
+                                                        class="img-fluid ">
+                                                </a>
+                                            </div>
+                                            <div class="pt-2 px-0">
+                                                <div class="content-top">
+                                                    <h3 class="fs-18 my-3"><a
+                                                            href="https://libfan.medium.com/creating-in-the-cracks-motherhood-art-and-the-self-im-still-becoming-6e0c717fea04"><span>Creating
+                                                                in the Cracks: Motherhood, Art, and the Self I’m Still
+                                                                Becoming</span></a></h3>
+                                                    <a class="hover-underline"
+                                                        href="https://libfan.medium.com/creating-in-the-cracks-motherhood-art-and-the-self-im-still-becoming-6e0c717fea04">Read
+                                                        more <i class="bi bi-arrow-right ms-1"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-<!---
+                                    <!--
 <div class="col h-100 mt-5">
     <div class="card card-post bg-transparent ">
         <div class="card-img-top overflow-hidden position-relative hover-scale-image rounded-4">
@@ -449,97 +495,103 @@ End Item Product-->
 </div>
 -->
 
-                </div>
-                <!--Pagination-->
-<nav aria-label="Page navigation" class="">
-    <ul class="pagination m-0 d-flex align-items-center flex-wrap">
-        <li class="page-item disabled">
-            <a aria-label="link" class="page-link" href="#" tabindex="-1"><i class="bi bi-chevron-left fs-xs fw-bolder"></i></a>
-        </li>
-        <li class="page-item active"><a aria-label="link" class="page-link" href="#">1</a></li>
-        <li class="page-item"><a aria-label="link" class="page-link" href="#">2</a></li>
+                                </div>
+                                <!--Pagination-->
+                                <nav aria-label="Page navigation" class="">
+                                    <ul class="pagination m-0 d-flex align-items-center flex-wrap">
+                                        <li class="page-item disabled">
+                                            <a aria-label="link" class="page-link" href="#" tabindex="-1"><i
+                                                    class="bi bi-chevron-left fs-xs fw-bolder"></i></a>
+                                        </li>
+                                        <li class="page-item active"><a aria-label="link" class="page-link"
+                                                href="#">1</a></li>
+                                        <li class="page-item"><a aria-label="link" class="page-link" href="#">2</a></li>
 
 
-        <li class="page-item">
-            <a aria-label="link" class="page-link" href="#"><i class="bi bi-chevron-right fs-xs fw-bolder"></i></a>
-        </li>
-    </ul>
-</nav>
-<!--End Pagination-->
+                                        <li class="page-item">
+                                            <a aria-label="link" class="page-link" href="#"><i
+                                                    class="bi bi-chevron-right fs-xs fw-bolder"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!--End Pagination-->
 
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-            <!-- end section -->
-            <!-- Start footer section -->
-            <footer class="section pb-5 overflow-x-hidden border-top">
-                <div class="container">
-                    <ul class="nav list-unstyled mb-5 mb-xxl-7">
-                        <li class="me-3 me-lg-5">
-                            <a class="hover-underline fw-bold" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="me-3 me-lg-5">
-                            <a class="hover-underline fw-bold" href="https://drive.google.com/file/d/1JVT4iGX7je-rFjG8XdoNt7ObQ0_juSvI/view?usp=sharing">Résumé</a>
-                        </li>
-                        <li class="me-3 me-lg-5">
-                            <a class="hover-underline fw-bold" href="blog.html">Writings</a>
-                        </li>
-                    </ul>
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-12 col-lg-7 mb-5">
-                            <div data-aos="flip-down" data-aos-delay="100">
-
-                            <p class="mt-3">Copyright &copy; 2024.Libin Fan All rights reserved.<a target="_blank" href=""></a></p>
-
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </footer>
-            <!-- End footer section -->
-        </div>
-    </div>
-</main>
-<!-- Start footer include -->
-<!--Back to top -->
-<a href="#" aria-label="Back to top" class="js-back-to-top back-to-top d-flex flex-column align-items-center">
-    <i class="bi bi-arrow-up mb-2 text-center"></i>
-</a>
-<!--End Back to top -->
-<!--Settings -->
-<div class="fixed-top shadow-sm" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
-    <div class="settings" role="group" aria-label="Basic outlined example">
-        <div class="settings-action">
-            <div class="js-settings cursor-pointer bg-body">
-                <span class="icon-light" data-bs-theme-value="light">
-                     <i class="bi bi-sun"></i>
-                </span>
-                <span class="icon-dark" data-bs-theme-value="dark">
-                     <i class="bi bi-moon"></i>
-                </span>
+                </section>
+
+
+
+                <!-- end section -->
+                <!-- Start footer section -->
+                <footer class="section pb-5 overflow-x-hidden border-top">
+                    <div class="container">
+                        <ul class="nav list-unstyled mb-5 mb-xxl-7">
+                            <li class="me-3 me-lg-5">
+                                <a class="hover-underline fw-bold" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="me-3 me-lg-5">
+                                <a class="hover-underline fw-bold"
+                                    href="https://drive.google.com/file/d/1JVT4iGX7je-rFjG8XdoNt7ObQ0_juSvI/view?usp=sharing">Résumé</a>
+                            </li>
+                            <li class="me-3 me-lg-5">
+                                <a class="hover-underline fw-bold" href="blog.html">Writings</a>
+                            </li>
+                        </ul>
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-12 col-lg-7 mb-5">
+                                <div data-aos="flip-down" data-aos-delay="100">
+
+                                    <p class="mt-3">Copyright &copy; 2024.Libin Fan All rights reserved.<a
+                                            target="_blank" href=""></a></p>
+
+                                </div>
+                            </div>
+                </footer>
+                <!-- End footer section -->
             </div>
         </div>
-    </div>
-
+    </main>
+    <!-- Start footer include -->
+    <!--Back to top -->
+    <a href="#" aria-label="Back to top" class="js-back-to-top back-to-top d-flex flex-column align-items-center">
+        <i class="bi bi-arrow-up mb-2 text-center"></i>
     </a>
-</div>
-<!--End Settings -->
+    <!--End Back to top -->
+    <!--Settings -->
+    <div class="fixed-top shadow-sm" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
+        <div class="settings" role="group" aria-label="Basic outlined example">
+            <div class="settings-action">
+                <div class="js-settings cursor-pointer bg-body">
+                    <span class="icon-light" data-bs-theme-value="light">
+                        <i class="bi bi-sun"></i>
+                    </span>
+                    <span class="icon-dark" data-bs-theme-value="dark">
+                        <i class="bi bi-moon"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        </a>
+    </div>
+    <!--End Settings -->
 
 
-<!-- End footer include -->
-<!-- javascript libraries -->
-<script src="static/js/jquery.min.js"></script>
-<script src="static/js/dark-mode.js"></script>
-<script src="static/js/imagesloaded.pkgd.min.js"></script>
-<script src="static/js/swiper-bundle.min.js"></script>
-<script src="static/js/form-validation.js"></script>
-<script src="static/js/card.js"></script>
-<script src="static/js/bootstrap.bundle.min.js"></script>
-<script src="static/js/aos.js"></script>
-<script src="static/js/typed.umd.js"></script>
-<script src="static/js/custom.js"></script>
-<!-- end javascript libraries -->
+    <!-- End footer include -->
+    <!-- javascript libraries -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/dark-mode.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/form-validation.js"></script>
+    <script src="static/js/card.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/aos.js"></script>
+    <script src="static/js/typed.umd.js"></script>
+    <script src="static/js/custom.js"></script>
+    <!-- end javascript libraries -->
 </body>
+
 </html>
