@@ -67,6 +67,7 @@
             'portfolio-3': 'portfolio',
             'brand-portal': 'portfolio',
             'bioby': 'portfolio',
+            'social-growth': 'portfolio',
             'resume': 'resume',
             'contact': 'contact',
             'blog': 'blog'

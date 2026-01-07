@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="static/picture/favicon.png">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="static/css/css2.css" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="static/css/photoswipe.css">
+<link rel="stylesheet" href="static/css/card.css">
+<link rel="stylesheet" href="static/css/aos.css">
+<link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="static/css/bootstrap.css">
+<link rel="stylesheet" href="static/css/main.css">
+<title>Intelligent Social Growth Engine | Libin Fan Portfolio</title>
+</head>
+<body>
+<!-- Start include modal, offcanvas, etc...  -->
+<!--Modal Photo Swipe -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen" aria-label="Fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Margic cursor -->
+<div class="cursor"></div>
+<!-- End Margic cursor -->
+<!-- End include modal, offcanvas, etc...  -->
+<main>
+    <div class="col-wrap">
+        <!-- Sidebar will be loaded here -->
+        <div id="sidebar-placeholder"></div>
+        <div class="col-content" data-aos="fade">
+            <!-- Hero Section -->
+            <section class="section section-no-break pt-8 pb-6">
+                <div class="container">
+                    <div class="row align-items-center mb-8">
+                        <div class="col-12 col-lg-8 mx-auto text-center">
+                            <h1 class="display-3 fw-bolder mb-4" data-aos="fade-up">Intelligent Social Growth Engine</h1>
+                            <p class="fs-20 mb-2 opacity-75" data-aos="fade-up" data-aos-delay="50">智能社交增长引擎：自动化与用户获取优化</p>
+                            <p class="fs-18 mb-5 opacity-75" data-aos="fade-up" data-aos-delay="50">Data-Driven Automation & Organic User Acquisition</p>
+                            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                                <img src="static/picture/workflow pipeline.gif" alt="Data Processing & Distribution Pipeline with Feedback Loop" class="img-fluid rounded-4 shadow-lg" style="max-width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Overview -->
+            <section class="section py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="row g-4">
+                                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                                    <div class="h-100 p-4 bg-body rounded-4 border">
+                                        <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75">Project Type</h5>
+                                        <p class="mb-0 fs-18 fw-semibold">Growth Infrastructure</p>
+                                        <p class="mb-0 small opacity-75">B2B Service</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="h-100 p-4 bg-body rounded-4 border">
+                                        <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75">Platform</h5>
+                                        <p class="mb-0 fs-18 fw-semibold">Xiaohongshu/LinkedIn</p>
+                                        <p class="mb-0 small opacity-75"></p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="h-100 p-4 bg-body rounded-4 border">
+                                        <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75">My Role</h5>
+                                        <p class="mb-0 fs-18 fw-semibold">Product Engineer & Growth Lead</p>
+                                        <p class="mb-0 small opacity-75">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                                    <div class="h-100 p-4 bg-body rounded-4 border">
+                                        <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75 text-body">Tech Stack</h5>
+                                        <p class="mb-0 fs-18 fw-semibold text-body">Python, n8n, SQL, Headless CMS Workflow, A/B Testing Framework</p>
+                                        <p class="mb-0 small opacity-75 text-body">Programming</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Challenge Section -->
+            <section class="section py-6">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="mb-5" data-aos="fade-up">
+                                <h2 class="display-5 fw-bold mb-2">1. The Challenge</h2>
+                                <p class="fs-18 mb-2 opacity-75">背景与挑战</p>
+                                <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                            </div>
+
+                            <div class="mb-8" data-aos="fade-up">
+                                <h3 class="h3 fw-bold mb-4">Goal</h3>
+                                <p class="fs-18 mb-4">To To architect a scalable, zero-ad-spend growth engine for B2B lead generation on Xiaohongshu (Red Note) and LinkedIn without increasing manual headcount.</p>
+
+                                <h3 class="h3 fw-bold mb-4 mt-5">Pain Points</h3>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-3"><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Operational Bottleneck:</strong> Content distribution was manual and unscalable, consuming 15+ hours/week of human resources.</li>
+                                    <li class="mb-3"><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Data-Blind Strategy:</strong> Decision-making relied on subjective intuition rather than objective metrics, leading to volatile engagement rates.</li>
+                                    <li class="mb-3"><i class="bi bi-arrow-right-circle-fill text-primary me-2"></i><strong>Unsustainable CAC:</strong> High effort-to-lead ratio made organic acquisition costly and unpredictable.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- My Role Section -->
+            <section class="section py-6 bg-body-tertiary">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="mb-5" data-aos="fade-up">
+                                <h2 class="display-5 fw-bold mb-2">2. My Role</h2>
+                                <p class="fs-18 mb-2 opacity-75">我的角色</p>
+                                <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                            </div>
+
+                            <div class="row g-4 mb-8">
+                                <div class="col-12 col-md-6" data-aos="fade-up">
+                                    <div class="p-4 bg-body rounded-4 border h-100">
+                                        <h5 class="fw-bold mb-3">Product Growth Lead & Engineer</h5>
+                                        <p class="mb-0">Led the end-to-end development of automation infrastructure and data-driven optimization strategies.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="p-4 bg-body rounded-4 border h-100">
+                                        <h5 class="fw-bold mb-3">Core Focus</h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Full-Cycle Automationn</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>AHypothesis-Driven Testing</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Agile Growth Iteration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-8" data-aos="fade-up" style="margin-bottom: 5rem !important;">
+                                <h5 class="fw-bold mb-3">Tech Stack</h5>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary text-white fs-14 px-3 py-2">Python</span>
+                                    <span class="badge bg-primary text-white fs-14 px-3 py-2">n8n</span>
+                                    <span class="badge bg-primary text-white fs-14 px-3 py-2">SQL</span>
+                                    <span class="badge bg-primary text-white fs-14 px-3 py-2">Data Analysis</span>
+                                </div>
+                            </div>
+
+                            <div class="mb-8" data-aos="fade-up" style="margin-top: 2rem;">
+                                <h5 class="fw-bold mb-4">Technical Implementation</h5>
+                                <p class="fs-18 mb-4">Instead of a rigid script, I built a modular Python system that acts as a "digital employee."</p>
+
+                                <div class="row g-4">
+                                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                        <div class="p-4 bg-body rounded-4 border h-100">
+                                            <h6 class="fw-bold mb-3"><i class="bi bi-person-badge text-primary me-2"></i>Configurable Personas</h6>
+                                            <p class="mb-0">I defined Python dictionaries to manage different brand voices (Role A vs. Role B), allowing the system to switch strategies instantly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="p-4 bg-body rounded-4 border h-100">
+                                            <h6 class="fw-bold mb-3"><i class="bi bi-shuffle text-primary me-2"></i>Weighted Randomness</h6>
+                                            <p class="mb-0">The system doesn't just loop; it probabilistically selects content topics (e.g., 50% Case Studies, 50% Methodology) based on the account's growth stage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12" data-aos="fade-up" data-aos-delay="150">
+                                        <div class="p-4 bg-body rounded-4 border">
+                                            <h6 class="fw-bold mb-3"><i class="bi bi-person-check text-primary me-2"></i>Human-in-the-Loop</h6>
+                                            <p class="mb-0">The script integrates with Feishu/Lark Webhooks, pushing generated drafts to my phone for a one-click copy/approval, ensuring AI safety.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-8" data-aos="fade-up">
+                                <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#codeSnippetRole" aria-expanded="false" aria-controls="codeSnippetRole">
+                                    <i class="bi bi-code-square me-2"></i>Show Code Snippet for Different Role Setup
+                                </button>
+                                <div class="collapse" id="codeSnippetRole">
+                                    <div class="card card-body bg-dark text-light rounded-4 border-0 mb-3">
+                                        <pre class="mb-0" style="font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.6;"><code># ==========================================
+#  STRATEGIC CONFIGURATION
+#  Translating Marketing Personas into Code
+# ==========================================
+ROLE_CONFIG = {
+    "A": {
+        "name": "Official/Business Account",
+        "persona": "Senior expert, authoritative, data-driven.",
+        "mode_weights": {
+            "case_study": 50,    # Focus on building authority
+            "methodology": 50,   # Focus on sharing SOPs
+            "avoidance": 0,      # Not suitable for brand image
+        },
+        "card_color": "blue",    # Professionalism
+    },
+    "B": {
+        "name": "Operations/Traffic Account",
+        "persona": "Insider, sharp criticism, emotional resonance.",
+        "mode_weights": {
+            "avoidance": 50,     # High engagement potential
+            "trends": 50,        # Gossip & Hot topics
+        },
+        "card_color": "orange",  # Eye-catching
+    }
+}</code></pre>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#codeSnippetGeneration" aria-expanded="false" aria-controls="codeSnippetGeneration">
+                                    <i class="bi bi-code-square me-2"></i>Show Code Snippet for Content Generation
+                                </button>
+                                <div class="collapse" id="codeSnippetGeneration">
+                                    <div class="card card-body bg-dark text-light rounded-4 border-0">
+                                        <pre class="mb-0" style="font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.6;"><code>def job(role=None):
+    """
+    Main Workflow:
+    1. Identifies current role (A/B)
+    2. Selects content strategy based on weights
+    3. Fetches trends & data
+    4. Generates content via AI
+    5. Pushes to Feishu/Lark for approval
+    """
+    # ... (Setup code omitted) ...
+
+    # 1. Strategy Selection (Weighted Random)
+    mode = random.choices(modes, weights=weights)[0]
+
+    # 2. Dynamic Context Injection
+    if mode == "avoidance":
+        target_item, prompt_context = prepare_avoidance_mode(history, role)
+    elif mode == "trends":
+        target_item, prompt_context = prepare_trends_mode(role)
+
+    # 3. AI Generation (DeepSeek/OpenAI)
+    # Uses specific prompts based on the Persona defined in Config
+    full_text = generate_final_post(
+        target_item,
+        prompt_context["data_input"],
+        role=role
+    )
+
+    # 4. Human-in-the-loop (Feishu Push)
+    if full_text:
+        push_feishu_card(token, title, body, role=role)
+        print(f"✅ Content generated for {role} in {mode} mode.")</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Solution Section -->
+            <section class="section py-6">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="mb-5" data-aos="fade-up">
+                                <h2 class="display-5 fw-bold mb-2">3. The Solution</h2>
+                                <p class="fs-18 mb-2 opacity-75">解决方案 - 核心部分</p>
+                                <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                                <p class="fs-18 mb-4">A dual-track approach: Engineering a scalable automation pipeline while running high-velocity experiments to crack the growth code. (双轨制：一边造流水线，一边做高速实验).</p>
+                            </div>
+
+                            <!-- Phase 1 -->
+                            <div class="mb-8" data-aos="fade-up">
+                                <h3 class="h3 fw-bold mb-4">Phase 1: Automation Infrastructure</h3>
+                                <p class="fs-18 mb-4">I architected an end-to-end automation pipeline to replace manual operations:</p>
+
+                                <div class="row g-4 mb-4">
+                                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                        <div class="p-4 bg-body-tertiary rounded-4 h-100">
+                                            <h5 class="fw-bold mb-3"><i class="bi bi-gear-fill text-primary me-2"></i>Headless Publishing Pipeline</h5>
+                                            <p class="mb-0">Engineered Python scripts + n8n to decouple content creation from distribution, enabling "set-and-forget" scheduling.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="p-4 bg-body-tertiary rounded-4 h-100">
+                                            <h5 class="fw-bold mb-3"><i class="bi bi-magic text-primary me-2"></i>Context-Aware Assembly</h5>
+                                            <p class="mb-0">Programmed dynamic CTA injection based on account logic (Business vs. Personal IP) to optimize conversion paths.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-4" data-aos="fade-up" style="background-color: #050e1a; color: #ffffff;">
+                                    <h5 class="fw-bold mb-3" style="color: #ffffff;">Impact</h5>
+                                    <p class="mb-0 fs-18" style="color: #ffffff;">Reduced manual operational load by <strong style="color: #ffffff;">50%</strong>, shifting team focus from "execution" to "strategy." </p>
+                                </div>
+                            </div>
+
+                            <!-- Phase 2 -->
+                            <div class="mb-8" data-aos="fade-up">
+                                <h3 class="h3 fw-bold mb-4">Phase 2: Agile A/B Testing & Optimization</h3>
+                                <p class="fs-18 mb-4">Instead of guessing, I applied an agile testing framework to validate content performance across 3 key dimensions:</p>
+
+                                <div class="row g-4 mb-4">
+                                    <div class="col-12" data-aos="fade-up" data-aos-delay="50">
+                                        <div class="p-4 bg-body-tertiary rounded-4 border">
+                                            <h5 class="fw-bold mb-3"><i class="bi bi-palette-fill text-primary me-2"></i>Experiment #01: Visual Psychology</h5>
+                                            <p class="mb-2"><strong>Hypothesis:</strong> Do professionals prefer aesthetic vibes or information density?</p>
+                                            <p class="mb-0"><strong>Result:</strong>:"Structured Knowledge" covers outperformed artistic ones by 2x during peak business hours (12:00 PM).</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="p-4 bg-body-tertiary rounded-4 border">
+                                            <h5 class="fw-bold mb-3"><i class="bi bi-file-text-fill text-primary me-2"></i>Experiment #02: Content Granularity</h5>
+                                            <p class="mb-2"><strong>Hypothesis:</strong>  Broad tags vs. Vertical SOPs.</p>
+                                            <p class="mb-0"><strong>Result:</strong>Deep-dive SOPs posted at 23:00 achieved highest "Save Rate," validating the "Anxious Professional" persona.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12" data-aos="fade-up" data-aos-delay="150">
+                                        <div class="p-4 bg-body-tertiary rounded-4 border">
+                                            <h5 class="fw-bold mb-3"><i class="bi bi-lightbulb-fill text-primary me-2"></i>Experiment #03: Value Proposition</h5>
+                                            <p class="mb-2"><strong>Hypothesis:</strong> Tools vs. Insights.</p>
+                                            <p class="mb-0"><strong>Result:</strong> Tool-based posts drove Leads (DMs); Intel-based posts drove Authority (Follows).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Results Section -->
+            <section class="section py-6 bg-body-tertiary">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="mb-5" data-aos="fade-up">
+                                <h2 class="display-5 fw-bold mb-2">4. The Results</h2>
+                                <p class="fs-18 mb-2 opacity-75">成果 - 用数据说话</p>
+                                <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                                <p class="fs-18 mb-4">By combining automation efficiency with data-driven creative adjustments, I achieved:</p>
+                            </div>
+
+                            <div class="row g-4 mb-8">
+                                <div class="col-12 col-md-4" data-aos="fade-up">
+                                    <div class="p-5 bg-body rounded-4 border text-center h-100">
+                                        <div class="display-4 fw-bold text-primary mb-3">60%</div>
+                                        <h5 class="fw-bold mb-3">Reduction in CAC</h5>
+                                        <p class="mb-0">Achieved through purely organic traffic growth and automated workflows.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+                                    <div class="p-5 bg-body rounded-4 border text-center h-100">
+                                        <div class="display-4 fw-bold text-primary mb-3">35%</div>
+                                        <h5 class="fw-bold mb-3">Increase in CVR</h5>
+                                        <p class="mb-0">Lift in "View-to-Lead" conversion via optimized CTA placement and timing.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="p-5 bg-body rounded-4 border text-center h-100">
+                                        <div class="display-4 fw-bold text-primary mb-3">50%</div>
+                                        <h5 class="fw-bold mb-3">Time Saved</h5>
+                                        <p class="mb-0">Reduction in daily operational time through automation</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-5 bg-body rounded-4 border" data-aos="fade-up">
+                                <h5 class="fw-bold mb-3">Scalable System</h5>
+                                <p class="mb-0 fs-18"><strong>From "Intuition" to "Algorithm". </strong>Transformed a chaotic manual process into a predictable, code-based growth machine that scales linearly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Takeaways Section -->
+            <section class="section py-6">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="p-5 bg-body-tertiary rounded-4 border" data-aos="fade-up">
+                                <h3 class="h3 fw-bold mb-4 fst-italic">Key Takeaways</h3>
+                                <p class="fs-18 mb-0 fst-italic"><strong>"Build the car while driving it."</strong> This project proved that technical leverage (Automation) combined with scientific marketing (A/B Testing) is the fastest path to product-market fit. It wasn't just about saving time; it was about operationalizing creativity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end section -->
+            <!-- Start footer section -->
+            <footer class="section pb-5 overflow-x-hidden border-top">
+                <div class="container">
+                    <ul class="nav list-unstyled mb-5 mb-xxl-7">
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="https://drive.google.com/file/d/1JVT4iGX7je-rFjG8XdoNt7ObQ0_juSvI/view?usp=sharing">Résumé</a>
+                        </li>
+                        <li class="me-3 me-lg-5">
+                            <a class="hover-underline fw-bold" href="blog.html">Writings</a>
+                        </li>
+                    </ul>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-lg-7 mb-5">
+                            <div data-aos="flip-down" data-aos-delay="100">
+
+                            </div>
+                            <p class="mt-3">Copyright &copy; 2024.Libin Fan All rights reserved.<a target="" href=""></a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+            <!-- End footer section -->
+        </div>
+    </div>
+</main>
+<!-- Start footer include -->
+<!--Back to top -->
+<a href="#" aria-label="Back to top" class="js-back-to-top back-to-top d-flex flex-column align-items-center">
+    <i class="bi bi-arrow-up mb-2 text-center"></i>
+</a>
+<!--End Back to top -->
+<!--Settings -->
+<div class="fixed-top shadow-sm" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
+    <div class="settings" role="group" aria-label="Basic outlined example">
+        <div class="settings-action">
+            <div class="js-settings cursor-pointer bg-body">
+                <span class="icon-light" data-bs-theme-value="light">
+                     <i class="bi bi-sun"></i>
+                </span>
+                <span class="icon-dark" data-bs-theme-value="dark">
+                     <i class="bi bi-moon"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--End Settings -->
+
+
+<!-- End footer include -->
+<!-- javascript libraries -->
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/dark-mode.js"></script>
+<script src="static/js/imagesloaded.pkgd.min.js"></script>
+<script src="static/js/swiper-bundle.min.js"></script>
+<script src="static/js/form-validation.js"></script>
+<script src="static/js/card.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/aos.js"></script>
+<script src="static/js/typed.umd.js"></script>
+<script src="static/js/component-loader.js"></script>
+<script src="static/js/sidebar-active.js"></script>
+<script src="static/js/custom.js"></script>
+<!-- end javascript libraries -->
+</body>
+</html>
+
