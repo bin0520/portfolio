@@ -71,7 +71,7 @@
             'resume': 'resume',
             'contact': 'contact',
             'blog': 'blog',
-            'my-agent': 'my-agent'
+            'my-agent': 'portfolio'
         };
 
         // Get the page identifier for the current page
