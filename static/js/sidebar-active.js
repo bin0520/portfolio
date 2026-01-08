@@ -70,7 +70,8 @@
             'social-growth': 'portfolio',
             'resume': 'resume',
             'contact': 'contact',
-            'blog': 'blog'
+            'blog': 'blog',
+            'my-agent': 'my-agent'
         };
 
         // Get the page identifier for the current page
