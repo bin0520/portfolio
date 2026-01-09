@@ -8,7 +8,7 @@
     async function loadSidebar() {
         const sidebarPlaceholder = document.querySelector('#sidebar-placeholder');
         if (!sidebarPlaceholder) {
-            console.warn('Sidebar placeholder not found');
+            // Silently return if placeholder doesn't exist (some pages might not have it)
             return;
         }
 
@@ -125,8 +125,5 @@
 
     // Start immediately
     init();
-
-    // Also try after a short delay as fallback
-    setTimeout(loadSidebar, 100);
 })();
 

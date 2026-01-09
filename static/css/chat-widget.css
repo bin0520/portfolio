@@ -1,0 +1,111 @@
+/* Chat Widget Styles */
+.chat-widget-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.chat-widget-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.chat-widget-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat-widget-button svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+.chat-widget-button .close-icon {
+  display: none;
+}
+
+.chat-widget-container.active .chat-widget-button .chat-icon {
+  display: none;
+}
+
+.chat-widget-container.active .chat-widget-button .close-icon {
+  display: block;
+}
+
+.chat-widget-window {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 380px;
+  height: 600px;
+  max-height: calc(100vh - 100px);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: none;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+
+.chat-widget-container.active .chat-widget-window {
+  display: block;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-widget-window deep-chat {
+  width: 100%;
+  height: 100%;
+  display: block;
+  min-height: 500px;
+}
+
+/* Ensure deep-chat internal elements are visible */
+.chat-widget-window deep-chat::part(container) {
+  height: 100%;
+}
+
+.chat-widget-window deep-chat * {
+  box-sizing: border-box;
+}
+
+/* Dark mode support */
+[data-bs-theme="dark"] .chat-widget-window {
+  background: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .chat-widget-window {
+    width: calc(100vw - 40px);
+    right: -10px;
+    bottom: 80px;
+  }
+
+  .chat-widget-container {
+    bottom: 15px;
+    right: 15px;
+  }
+}

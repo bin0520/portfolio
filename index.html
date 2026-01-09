@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
 <link rel="stylesheet" href="static/css/bootstrap.css">
 <link rel="stylesheet" href="static/css/main.css">
+<link rel="stylesheet" href="static/css/chat-widget.css">
 <title>Libin Fan | Portfolio</title>
 </head>
 <body>
@@ -1066,7 +1067,6 @@ End Section Blog-->
 </div>
 <!--End Settings -->
 
-
 <!-- End footer include -->
 <!-- javascript libraries -->
 <script src="static/js/jquery.min.js"></script>
@@ -1081,6 +1081,97 @@ End Section Blog-->
 <script src="static/js/component-loader.js"></script>
 <script src="static/js/sidebar-active.js"></script>
 <script src="static/js/custom.js"></script>
+<!-- Deep Chat Component - Load script first -->
+<script>
+  // Try local file first, then CDN sources
+  function loadDeepChat() {
+    const localScript = 'static/js/deep-chat.bundle.js';
+    const cdnScripts = [
+      'https://unpkg.com/deep-chat@latest/dist/deepChat.bundle.js',
+      'https://cdn.jsdelivr.net/npm/deep-chat@latest/dist/deepChat.bundle.js'
+    ];
+
+    let currentIndex = -1; // Start with local file (-1)
+
+    function tryLoad() {
+      let scriptSrc;
+
+      if (currentIndex === -1) {
+        // Try local file first
+        scriptSrc = localScript;
+      } else if (currentIndex < cdnScripts.length) {
+        // Try CDN sources
+        scriptSrc = cdnScripts[currentIndex];
+      } else {
+        // All sources failed
+        console.error('❌ All deep-chat loading attempts failed.');
+        setTimeout(function() {
+          const chatWindow = document.querySelector('.chat-widget-window');
+          if (chatWindow) {
+            chatWindow.innerHTML = '<div style="padding: 20px; text-align: center; color: #666;"><p style="font-size: 16px; margin-bottom: 10px;">⚠️ Chat component failed to load</p><p style="font-size: 14px;">Please check your internet connection and refresh the page.</p></div>';
+          }
+        }, 1000);
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = scriptSrc;
+      script.onload = function() {
+        if (currentIndex === -1) {
+          console.log('✅ Deep-chat script loaded successfully from local file');
+        } else {
+          console.log('✅ Deep-chat script loaded successfully from CDN:', scriptSrc);
+        }
+      };
+      script.onerror = function() {
+        if (currentIndex === -1) {
+          console.warn('⚠️ Local file not found, trying CDN...');
+        } else {
+          console.warn('❌ Failed to load from:', scriptSrc);
+        }
+        currentIndex++;
+        tryLoad();
+      };
+      document.head.appendChild(script);
+    }
+
+    tryLoad();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadDeepChat);
+  } else {
+    loadDeepChat();
+  }
+</script>
+<!-- Chat Widget Controller -->
+<script src="static/js/chat-widget.js"></script>
 <!-- end javascript libraries -->
+
+<!-- Deep Chat Widget - Place after script loads -->
+<div class="chat-widget-container">
+  <button class="chat-widget-button" aria-label="Toggle chat">
+    <svg class="chat-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+      <path d="M7 9h10v2H7zm0-3h10v2H7zm0 6h7v2H7z"/>
+    </svg>
+    <svg class="close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+    </svg>
+  </button>
+  <div class="chat-widget-window">
+    <deep-chat
+      id="deep-chat-widget"
+      directConnection='{
+        "deepSeek": {
+          "key": "sk-2067dbc98d004a72915a9c0c6f0df7d2",
+          "system_prompt": "You are a helpful assistant.",
+          "temperature": 0.7
+        }
+      }'
+      style="width: 100%; height: 100%;"
+    ></deep-chat>
+  </div>
+</div>
 </body>
 </html>
