@@ -65,6 +65,7 @@
             'portfolio-1': 'portfolio',
             'portfolio-2': 'portfolio',
             'portfolio-3': 'portfolio',
+            'portfolio-4': 'portfolio',
             'brand-portal': 'portfolio',
             'bioby': 'portfolio',
             'social-growth': 'portfolio',
