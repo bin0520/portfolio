@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="static/picture/favicon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="static/css/css2.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/css/photoswipe.css">
+    <link rel="stylesheet" href="static/css/card.css">
+    <link rel="stylesheet" href="static/css/aos.css">
+    <link rel="stylesheet" href="static/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Libin Fan | Portfolio</title>
+</head>
+
+<body>
+    <!-- Start include modal, offcanvas, etc...  -->
+    <!--Modal Photo Swipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"
+                        aria-label="Fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out" aria-label="Zoom"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Margic cursor -->
+    <div class="cursor"></div>
+    <!-- End Margic cursor -->
+    <!-- End include modal, offcanvas, etc...  -->
+    <main>
+        <div class="col-wrap">
+            <!-- Sidebar will be loaded here -->
+            <div id="sidebar-placeholder"></div>
+            <div class="col-content" data-aos="fade">
+                <!-- Hero Section -->
+                <section class="section section-no-break pt-8 pb-6">
+                    <div class="container">
+                        <div class="row align-items-center mb-6">
+                            <div class="col-12 col-lg-8 mx-auto text-center">
+                                <h1 class="display-3 fw-bolder mb-4" data-aos="fade-up">Optimizing Influencer Matrix for Higher Engagement</h1>
+                                <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                                    <video class="img-fluid rounded-4 shadow-lg" autoplay loop muted playsinline style="max-width: 100%; width: 100%;">
+                                        <source src="static/file/duet.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Project Overview -->
+                <section class="section py-5 bg-body-tertiary">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="row g-4">
+                                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                                        <div class="h-100 p-4 bg-body rounded-4 border">
+                                            <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75">Project Length</h5>
+                                            <p class="mb-0 fs-18 fw-semibold">3 months</p>
+                                            <p class="mb-0 small opacity-75">Q2 2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+                                        <div class="h-100 p-4 bg-body rounded-4 border">
+                                            <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75">Client</h5>
+                                            <p class="mb-0 fs-18 fw-semibold">Duet</p>
+                                            <p class="mb-0 small opacity-75">Influencer Marketing</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="h-100 p-4 bg-body rounded-4 border">
+                                            <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75">My Role</h5>
+                                            <p class="mb-0 fs-18 fw-semibold">Executive Campaign Lead</p>
+                                            <p class="mb-0 small opacity-75">Campaign Manager</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                                        <div class="h-100 p-4 bg-body rounded-4 border">
+                                            <h5 class="text-uppercase fs-12 fw-bold mb-3 opacity-75">Tools</h5>
+                                            <p class="mb-0 fs-18 fw-semibold">MarTech Stack</p>
+                                            <p class="mb-0 small opacity-75">& ROI Management</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Project Overview Content -->
+                <section class="section py-6">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="mb-6" data-aos="fade-up">
+                                    <h2 class="display-5 fw-bold mb-4">Project Overview</h2>
+                                    <p class="fs-18 mb-4">I orchestrated a strategic pivot for Duet's influencer campaign, moving from high-end branding to high-engagement community marketing. I oversaw the end-to-end execution, optimized the MarTech workflow for influencer selection, and managed budget allocation to maximize CAC efficiency.</p>
+                                    <p class="fs-18 mb-0">Through data-driven decision making and strategic resource allocation, I directed the shift from aspirational professionals to relatable micro-influencers, establishing a validated growth model that delivered significantly improved engagement rates and more authentic brand connections.</p>
+                                </div>
+
+                                <div class="row g-4 mb-6">
+                                    <div class="col-12 col-md-6" data-aos="fade-up">
+                                        <h5 class="fw-bold mb-3">Key Skills</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Strategic Decision Making</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Resource Allocation</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Performance Oversight</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>MarTech Workflow Optimization</li>
+                                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>A/B Testing</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                        <h5 class="fw-bold mb-3">Project Goals</h5>
+                                        <p class="mb-0">Improve audience engagement rates by identifying the most effective influencer persona for the target demographic, while optimizing cost efficiency and content authenticity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DISCOVER Section -->
+                <section class="section py-6 bg-body-tertiary">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="mb-5" data-aos="fade-up">
+                                    <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Discover</h2>
+                                    <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                                </div>
+
+                                <div class="mb-6" data-aos="fade-up">
+                                    <h3 class="h3 fw-bold mb-4">The Challenge</h3>
+                                    <div class="p-4 bg-body rounded-4 border mb-4" style="background-color: #f8d8d4 !important;">
+                                        <p class="mb-0 fw-bold text-center fs-18">Initially, the brand focused on "High-End Professionals" (White-collar/Elite) influencers. However, we observed that while the content looked polished, the audience engagement (likes/comments) was low, and the content felt "distant" and lacked relatability.</p>
+                                    </div>
+                                    <p class="fs-18 mb-4">The polished, professional content created by high-end influencers was visually appealing but failed to connect with the target audience on an emotional level. Engagement metrics showed low interaction rates, resulting in inefficient budget utilization and a disconnect between marketing spend and actual conversion intent.</p>
+
+                                    <div class="row g-4 mt-4">
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                            <div class="p-4 bg-body rounded-4 border h-100">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-graph-down text-warning me-2"></i>Low Engagement</h5>
+                                                <p class="mb-0 small">Despite high production quality, likes and comments per view were significantly below industry benchmarks.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="p-4 bg-body rounded-4 border h-100">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-emoji-frown text-warning me-2"></i>Lack of Relatability</h5>
+                                                <p class="mb-0 small">Content felt distant and unrelatable to the target demographic, creating a barrier to authentic connection.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DEFINE Section -->
+                <section class="section py-6">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="mb-5" data-aos="fade-up">
+                                    <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Define</h2>
+                                    <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                                </div>
+
+                                <div class="mb-6" data-aos="fade-up">
+                                    <h3 class="h3 fw-bold mb-4">The Hypothesis</h3>
+                                    <div class="p-4 bg-body rounded-4 border mb-4" style="background-color: #d4edda !important;">
+                                        <p class="mb-0 fw-bold text-center fs-18">Identifying a gap in market fit, I directed the strategy towards "Authenticity over Aspiration." I aligned the team's focus on University Students & Mid-tier Creators to capture the underserved demographic and maximize ROI.</p>
+                                    </div>
+                                    <p class="fs-18 mb-5">Based on engagement data and audience behavior analysis, I established a strategic direction that shifted from aspirational content to authentic, relatable storytelling. I directed the team to prioritize micro-influencers and student creators who could create more genuine connections with the target audience through everyday scenarios and authentic experiences, positioning this as a scalable approach for future campaigns.</p>
+
+                                    <div class="row g-4">
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                            <div class="p-4 bg-body rounded-4 border h-100">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-lightbulb text-primary me-2"></i>Authenticity Over Aspiration</h5>
+                                                <p class="mb-0 small">Real, relatable content would outperform polished professional content for this specific product and audience.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="p-4 bg-body rounded-4 border h-100">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-people text-primary me-2"></i>Micro-Influencer Advantage</h5>
+                                                <p class="mb-0 small">University students and mid-tier creators (KOC) would create stronger emotional connections than high-end professionals.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DEVELOP Section -->
+                <section class="section py-6 bg-body-tertiary">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="mb-5" data-aos="fade-up">
+                                    <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Develop</h2>
+                                    <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                                </div>
+
+                                <div class="mb-6" data-aos="fade-up">
+                                    <h3 class="h3 fw-bold mb-4">The Experiment</h3>
+                                    <p class="fs-18 mb-5">I orchestrated a strategic redesign of the influencer selection process and launched a controlled pilot program with a new cohort of creators, managing the end-to-end execution and performance oversight.</p>
+
+                                    <div class="row g-4 mb-5">
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                            <div class="p-4 bg-body rounded-4 border h-100">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-arrow-repeat text-primary me-2"></i>Strategy Shift</h5>
+                                                <p class="mb-0 small">Directed the shift in influencer selection criteria from "Professional Status" to "Relatability & Storytelling", establishing new evaluation frameworks.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="p-4 bg-body rounded-4 border h-100">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-person-plus text-primary me-2"></i>Pilot Program Execution</h5>
+                                                <p class="mb-0 small">Managed the recruitment and onboarding of a test group of mid-tier student creators to produce daily routine scenarios (e.g., dormitory life, study sessions).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="h5 fw-bold mb-3">Key Changes</h4>
+                                    <ul class="list-unstyled mb-5">
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Workflow Efficiency:</strong> Streamlined the selection process using data-driven MarTech tools, moving from manual professional status evaluation to automated relatability and storytelling ability scoring</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Risk Management:</strong> Tested the new strategy with a controlled budget allocation first, validating the approach before full-scale deployment</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Creator Profile:</strong> Directed focus toward university students and mid-tier creators (micro-influencers/KOC) rather than high-end professionals, optimizing for both engagement and cost efficiency</li>
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Content Themes:</strong> Established content guidelines emphasizing daily routines, dormitory life, study sessions, and relatable moments over polished professional settings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DELIVER Section -->
+                <section class="section py-6">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="mb-5" data-aos="fade-up">
+                                    <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Deliver</h2>
+                                    <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
+                                </div>
+
+                                <div class="mb-6" data-aos="fade-up">
+                                    <h3 class="h3 fw-bold mb-4">The Outcome</h3>
+                                    <p class="fs-18 mb-5">The experiment validated our hypothesis, demonstrating significant improvements across multiple key metrics and establishing a new, more effective influencer strategy for the brand.</p>
+
+                                    <div class="row g-4 mb-5">
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
+                                            <div class="p-4 bg-body rounded-4 border h-100" style="background-color: #d4edda !important;">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Validated New Persona</h5>
+                                                <p class="mb-0 small">The student-focused content generated significantly higher Interaction Rate (Likes + Comments / Views).</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="p-4 bg-body rounded-4 border h-100" style="background-color: #d4edda !important;">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-heart-fill text-success me-2"></i>Improved Content Authenticity</h5>
+                                                <p class="mb-0 small">The comment sentiment shifted from passive viewing to active inquiry ("Where can I buy this?", "So relatable!").</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                                            <div class="p-4 bg-body rounded-4 border h-100" style="background-color: #d4edda !important;">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-cash-coin text-success me-2"></i>Cost Efficiency</h5>
+                                                <p class="mb-0 small">Successfully identified a high-performing influencer tier that offered better value for budget compared to the original high-end strategy.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                            <div class="p-4 bg-body rounded-4 border h-100" style="background-color: #d4edda !important;">
+                                                <h5 class="fw-bold mb-3"><i class="bi bi-graph-up-arrow text-success me-2"></i>Engagement Growth</h5>
+                                                <p class="mb-0 small">Measurable increase in audience interaction, with comments showing genuine interest and purchase intent.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="h5 fw-bold mb-4">Key Results</h4>
+                                    <div class="row g-4 mb-5">
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="p-4 bg-body rounded-4 border">
+                                                <h5 class="fw-bold mb-3">Quantitative Improvements</h5>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="mb-2"><i class="bi bi-arrow-up-circle-fill text-success me-2"></i><strong>Interaction Rate:</strong> Significantly higher engagement rates compared to the high-end professional influencer content</li>
+                                                    <li class="mb-2"><i class="bi bi-arrow-up-circle-fill text-success me-2"></i><strong>Comment Quality:</strong> Shift from passive engagement to active inquiries and purchase intent</li>
+                                                    <li class="mb-2"><i class="bi bi-arrow-down-circle-fill text-success me-2"></i><strong>Cost per Engagement:</strong> Lower cost per engagement due to more affordable micro-influencer rates</li>
+                                                    <li class="mb-2"><i class="bi bi-arrow-up-circle-fill text-success me-2"></i><strong>Scalability:</strong> Established a reusable framework and validated process for future campaigns, enabling consistent performance across multiple campaign cycles</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-5 bg-body rounded-4 border" data-aos="fade-up">
+                                        <h4 class="h5 fw-bold mb-3">Impact</h4>
+                                        <p class="fs-18 mb-0">I established a validated growth model for Duet's influencer marketing strategy, proving that authenticity and relatability can outperform aspirational content for certain products and audiences. The strategic pivot I orchestrated led to a complete overhaul of the influencer selection process, establishing a scalable framework that delivered improved engagement metrics, better cost efficiency, and more authentic brand connections with the target demographic. This model has since been adopted as the standard approach for future campaigns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end section -->
+                <!-- Start footer section -->
+                <footer class="section pb-5 overflow-x-hidden border-top">
+                    <div class="container">
+                        <ul class="nav list-unstyled mb-5 mb-xxl-7">
+                            <li class="me-3 me-lg-5">
+                                <a class="hover-underline fw-bold" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="me-3 me-lg-5">
+                                <a class="hover-underline fw-bold"
+                                    href="https://drive.google.com/file/d/1JVT4iGX7je-rFjG8XdoNt7ObQ0_juSvI/view?usp=sharing">Résumé</a>
+                            </li>
+                            <li class="me-3 me-lg-5">
+                                <a class="hover-underline fw-bold" href="blog.html">Writings</a>
+                            </li>
+                        </ul>
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-12 col-lg-7 mb-5">
+                                <div data-aos="flip-down" data-aos-delay="100">
+
+                                </div>
+                                <p class="mt-3">Copyright &copy; 2024.Libin Fan All rights reserved.<a target=""
+                                        href=""></a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </footer>
+                <!-- End footer section -->
+            </div>
+        </div>
+    </main>
+    <!-- Start footer include -->
+    <!--Back to top -->
+    <a href="#" aria-label="Back to top" class="js-back-to-top back-to-top d-flex flex-column align-items-center">
+        <i class="bi bi-arrow-up mb-2 text-center"></i>
+    </a>
+    <!--End Back to top -->
+    <!--Settings -->
+    <div class="fixed-top shadow-sm" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
+        <div class="settings" role="group" aria-label="Basic outlined example">
+            <div class="settings-action">
+                <div class="js-settings cursor-pointer bg-body">
+                    <span class="icon-light" data-bs-theme-value="light">
+                        <i class="bi bi-sun"></i>
+                    </span>
+                    <span class="icon-dark" data-bs-theme-value="dark">
+                        <i class="bi bi-moon"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--End Settings -->
+
+
+    <!-- End footer include -->
+    <!-- javascript libraries -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/dark-mode.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script src="static/js/form-validation.js"></script>
+    <script src="static/js/card.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/aos.js"></script>
+    <script src="static/js/typed.umd.js"></script>
+    <script src="static/js/component-loader.js"></script>
+    <script src="static/js/sidebar-active.js"></script>
+    <script src="static/js/custom.js"></script>
+    <!-- end javascript libraries -->
+</body>
+
+</html>
