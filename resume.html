@@ -152,8 +152,8 @@
                                             <p class="opacity-75">Cornell University</p>
                                         </div>
                                         <div class="mt-4">
-                                            <p class="fs-14 mb-1">2025</p>
-                                            <h3 class="h6 mb-2">PhD in Sociology (Data Analytics)</h3>
+                                            <p class="fs-14 mb-1">Expected 2026</p>
+                                            <h3 class="h6 mb-2">PhD in Sociology (Human Behavior & Data Analytics)</h3>
                                             <p class="opacity-75">University at Albany, SUNY</p>
                                         </div>
                                         <div class="mt-4">
@@ -194,49 +194,8 @@
                             </div>
                             <div class="col-12 col-lg-7">
                                 <div class="sticky-lg-top top-20">
-                                    <div class="widget mb-5 mb-lg-7">
-                                        <div class="hero-caption hero-caption-2">
-                                            <h2 class="h4 text-uppercase">Experience</h2>
-                                        </div>
-                                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
-                                            <p class="fs-14 mb-1">Bioby AI | Remote, US-based</p>
-                                            <h3 class="h6 mb-2">Product Lead & Co-founder (Creator Tech) | Jan 2025 - Present</h3>
-                                            <p class="opacity-75 mb-0">• Led the 0-to-1 Product Lifecycle from concept to MVP launch, managing sprint priorities (Agile) and translating ambiguous market insights into precise Technical PRDs for the engineering team.<br>
-                                            • Leveraged hands-on expertise in Python & SQL to architect the platform's data schema and analytics pipelines, bridging the gap between business goals and technical feasibility to reduce manual reporting work by 50%.<br>
-                                            • Engineered a custom Social Media Automation Bot to drive organic user acquisition on Xiaohongshu, executing content A/B testing to validate market positioning and achieve product-led growth without paid spend.<br>
-                                            • Designed and launched the proprietary "Pitch-to-Pay" Workflow Engine, integrating complex agency approval logic (Script/Demo/Final Cut) into a visual timeline that reduced communication overhead by 30%.</p>
-                                        </div>
-                                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
-                                            <p class="fs-14 mb-1">University at Albany, SUNY | Albany, NY</p>
-                                            <h3 class="h6 mb-2">Graduate Research Fellow (Data Analytics & Behavior) | Aug 2019 - May 2025</h3>
-                                            <p class="opacity-75 mb-0">• Led longitudinal research projects focused on human behavior and social interaction, managing the full lifecycle from hypothesis generation and data collection to advanced statistical analysis and publication.<br>
-                                            • Leveraged Python & SQL to process and analyze complex behavioral datasets, uncovering patterns in user interaction that parallel engagement metrics in digital products.<br>
-                                            • Designed and executed mixed-methods studies (surveys + in-depth interviews), validating theoretical models with empirical data—a process directly transferable to Customer Discovery and Product-Market Fit validation.<br>
-                                            • Translated complex quantitative findings into actionable insights for non-technical stakeholders, presenting research outcomes at major academic conferences.</p>
-                                        </div>
-                                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
-                                            <p class="fs-14 mb-1">Guangxi Minzu University | China</p>
-                                            <h3 class="h6 mb-2">Operations Lead | Sep 2014 - July 2019</h3>
-                                            <p class="opacity-75 mb-0">• Founded and scaled the All-Media Studio (internal startup) from scratch, establishing standard operating procedures (SOPs) and managing the full content lifecycle for a cross-functional team.<br>
-                                            • Directed mixed-methods user research to diagnose platform friction points, implementing data-driven content strategies that increased audience engagement by 15%.</p>
-                                        </div>
-                                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
-                                            <p class="fs-14 mb-1">FleishmanHillard | Shanghai, China</p>
-                                            <h3 class="h6 mb-2">Account Executive (Global Tech & Consumer Practice) | Sep 2012 - Jul 2013</h3>
-                                            <p class="opacity-75 mb-0">• Managed strategic communications for Tier-1 clients (e.g., Philips), gaining critical Domain Expertise in agency reporting workflows—identifying the specific manual friction points that directly inspired Bioby AI's automation features.</p>
-                                        </div>
-                                    </div>
-                                    <div class="widget mb-5 mb-lg-7">
-                                        <div class="hero-caption hero-caption-2">
-                                            <h2 class="h4 text-uppercase">Projects</h2>
-                                        </div>
-                                        <div class="mt-4 border bg-body-tertiary rounded-4 p-3">
-                                            <p class="fs-14 mb-1">Creator Campaign Management System (CMS) | Bioby.ai</p>
-                                            <h3 class="h6 mb-2">Product Lead & Technical PM</h3>
-                                            <p class="opacity-75 mb-0">• Engineered a specialized "Campaign Workflow Engine" based on real-world execution experience, creating distinct approval stages for Script, Demo Video, and Final Cut to ensure strict QC before publishing.<br>
-                                            • Optimized the "Pitch-to-Pay" lifecycle by integrating a visual timeline that synchronizes Agency requirements with Creator schedules, reducing communication overhead by 30% and ensuring on-time delivery of marketing assets.</p>
-                                        </div>
-                                    </div>
+                                    <div id="experience-section-placeholder"></div>
+                                    <div id="projects-section-placeholder"></div>
                                     <div class="widget mb-5 mb-lg-7">
                                         <div class="hero-caption hero-caption-2">
                                             <h2 class="h4 text-uppercase">Other Skills</h2>
@@ -533,6 +492,16 @@ End Section Testimonial-->
     <script src="static/js/aos.js"></script>
     <script src="static/js/typed.umd.js"></script>
     <script src="static/js/component-loader.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.getElementById('experience-section-placeholder')) {
+                ComponentLoader.load('components/experience-section.html', '#experience-section-placeholder');
+            }
+            if (document.getElementById('projects-section-placeholder')) {
+                ComponentLoader.load('components/projects-section.html', '#projects-section-placeholder');
+            }
+        });
+    </script>
     <script src="static/js/sidebar-active.js"></script>
     <script src="static/js/custom.js"></script>
     <!-- end javascript libraries -->

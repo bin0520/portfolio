@@ -10,6 +10,8 @@ This directory contains reusable HTML components for the portfolio website.
 - `navigation.html` - Sidebar navigation component
 - `footer-section.html` - Footer section with links and copyright
 - `footer.html` - Back to top button and settings toggle
+- `experience-section.html` - Resume experience section (job history)
+- `projects-section.html` - Resume projects section
 - `scripts.html` - JavaScript library includes
 
 ## Usage
