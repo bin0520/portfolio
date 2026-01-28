@@ -413,6 +413,7 @@ h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   border: 0.5px solid rgba(var(--bs-body-color-rgb), 0.5);
   border-radius: 50%;
   z-index: 9999;
+  pointer-events: none;
 }
 .cursor.active {
   width: 6px;
@@ -1876,6 +1877,7 @@ a:hover {
   position: relative;
   text-decoration: none;
   transition: all 0.4s linear;
+  z-index: 1;
 }
 .hover-underline:hover {
   color: var(--bs-bg-mode);
@@ -1890,6 +1892,7 @@ a:hover {
   width: 0;
   height: 1px;
   background: var(--bs-body-color);
+  pointer-events: none;
 }
 .hover-underline.line-center:after {
   bottom: 40%;
