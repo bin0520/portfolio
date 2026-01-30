@@ -1,0 +1,15 @@
+# robots.txt for libinfan.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://libinfan.com/sitemap.xml
+
+# Disallow system files
+Disallow: /static/js/
+Disallow: /components/
+
+# Allow important resources
+Allow: /static/css/
+Allow: /static/picture/
+Allow: /static/image/
