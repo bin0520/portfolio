@@ -72,7 +72,8 @@
             'resume': 'resume',
             'contact': 'contact',
             'blog': 'blog',
-            'my-agent': 'portfolio'
+            'my-agent': 'portfolio',
+            'plotjoys-gtm': 'portfolio'
         };
 
         // Get the page identifier for the current page
