@@ -72,7 +72,8 @@
             'resume': 'resume',
             'contact': 'contact',
             'blog': 'blog',
-            'plotjoys-gtm': 'portfolio'
+            'plotjoys-gtm': 'portfolio',
+            'little-witch': 'portfolio'
         };
 
         // Get the page identifier for the current page
