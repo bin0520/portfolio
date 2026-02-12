@@ -79,6 +79,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://libinfan.com/media-lab.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://libinfan.com/campus-experience.html</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>

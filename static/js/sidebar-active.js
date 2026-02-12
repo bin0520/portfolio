@@ -73,7 +73,8 @@
             'contact': 'contact',
             'blog': 'blog',
             'plotjoys-gtm': 'portfolio',
-            'little-witch': 'portfolio'
+            'little-witch': 'portfolio',
+            'media-lab': 'portfolio'
         };
 
         // Get the page identifier for the current page
