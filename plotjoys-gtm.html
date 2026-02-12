@@ -23,6 +23,105 @@
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/main.css">
     <title>PlotJoys GTM Strategy & Multi-Channel Marketing | Libin Fan</title>
+    <style>
+        /* Organic Traffic Chart Card */
+        .plotjoys-chart-card {
+            background: #1a1a2e;
+            border-radius: 20px;
+            padding: 28px 28px 20px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .plotjoys-chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .plotjoys-chart-label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            opacity: 0.9;
+        }
+        .plotjoys-chart-legend {
+            font-size: 0.75rem;
+            opacity: 0.6;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .plotjoys-legend-dot {
+            width: 8px;
+            height: 8px;
+            background: #b8f054;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .plotjoys-chart-metric {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -2px;
+        }
+        .plotjoys-chart-area {
+            position: relative;
+        }
+        .plotjoys-chart-svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .plotjoys-chart-x-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.65rem;
+            opacity: 0.35;
+            margin-top: 8px;
+            padding: 0 2px;
+        }
+
+        /* Animation: draw line + fill area on scroll */
+        .plotjoys-step-line {
+            stroke-dasharray: 1200;
+            stroke-dashoffset: 1200;
+            transition: stroke-dashoffset 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .plotjoys-area-fill {
+            opacity: 0;
+            transition: opacity 1s ease 0.6s;
+        }
+        .plotjoys-chart-card circle,
+        .plotjoys-chart-card polygon:last-of-type {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        /* Metric counter animation */
+        .plotjoys-chart-metric {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        /* Animated state */
+        .plotjoys-chart-card.animate .plotjoys-step-line {
+            stroke-dashoffset: 0;
+        }
+        .plotjoys-chart-card.animate .plotjoys-area-fill {
+            opacity: 1;
+        }
+        .plotjoys-chart-card.animate circle,
+        .plotjoys-chart-card.animate polygon:last-of-type {
+            opacity: 1;
+            transition-delay: 1.2s;
+        }
+        .plotjoys-chart-card.animate .plotjoys-chart-metric {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.2s;
+        }
+    </style>
 </head>
 
 <body>
@@ -158,53 +257,18 @@
                                     <span class="duet-section-num">00</span>
                                     <h2 class="display-5 fw-bold mb-3">Background</h2>
                                     <div class="bg-primary mb-4" style="width: 60px; height: 4px;"></div>
-                                    <p class="fs-18 mb-4"><a href="https://www.plotjoys.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-underline fw-semibold">PlotJoys</a> was founded by my friend <strong>Dao</strong> with a magical vision: <strong>every child deserves to be the hero of their own story</strong>. Using a proprietary AI illustration pipeline, they craft one-of-a-kind, fully personalized books.</p>
-
-                                    <div class="duet-highlight duet-highlight-challenge p-4 rounded-4 border mb-4">
-                                        <p class="fs-12 text-uppercase fw-bold mb-2" style="letter-spacing: 1px;">The Challenge</p>
-                                        <p class="mb-0 fw-bold text-center fs-18">The team was product-heavy (AI & engineering) but had <strong>zero marketing presence</strong>. I stepped in not just as a "friend helping out," but as the <strong>Solo Marketing Lead</strong> to build the entire Go-To-Market (GTM) infrastructure. I transitioned the company from a silent product to a brand with active customers and a validated acquisition loop.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 01. Discover -->
-                <section class="section py-6 bg-body-tertiary">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-10">
-                                <div class="mb-5" data-aos="fade-up">
-                                    <span class="duet-section-num">01</span>
-                                    <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Discover</h2>
-                                    <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
-                                </div>
-
-                                <div class="mb-6" data-aos="fade-up">
-                                    <h3 class="h3 fw-bold mb-4">Starting from Absolute Zero</h3>
-                                    <p class="fs-18 mb-4">When I took over, PlotJoys had no brand equity, no historical data, and no social following.</p>
-
-                                    <!-- Starting point metrics -->
-                                    <div class="duet-metrics-viz mb-4" data-aos="fade-up">
-                                        <h6 class="fw-bold mb-3 text-secondary">Starting Point — Day One</h6>
-                                        <div class="duet-bar-chart">
-                                            <div class="duet-bar-row">
-                                                <span class="duet-bar-label">Marketing Team Size</span>
-                                                <div class="duet-bar-track"><div class="duet-bar-fill duet-bar-before" style="width: 10%"></div></div>
-                                                <span class="duet-bar-value">1 (Me)</span>
-                                            </div>
-                                            <div class="duet-bar-row">
-                                                <span class="duet-bar-label">Initial Social Proof</span>
-                                                <div class="duet-bar-track"><div class="duet-bar-fill duet-bar-before" style="width: 2%"></div></div>
-                                                <span class="duet-bar-value">0</span>
+                                    <div class="row align-items-center mb-5 g-4">
+                                        <div class="col-12 col-md-7" data-aos="fade-up">
+                                            <p class="fs-18 mb-4"><a href="https://www.plotjoys.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-underline fw-semibold">PlotJoys</a> was founded by my friend <strong>Dao</strong> with a magical vision: <strong>every child deserves to be the hero of their own story</strong>. Using a proprietary AI illustration pipeline, they craft one-of-a-kind, fully personalized books.</p>
+                                            <p class="fs-18 mb-4">When I took over, PlotJoys had no brand equity, no historical data, and no social following. The team was product-heavy (AI & engineering) but had <strong>zero marketing presence</strong>.</p>
+                                            <div class="duet-highlight duet-highlight-challenge p-4 rounded-4 border">
+                                                <p class="fs-12 text-uppercase fw-bold mb-2" style="letter-spacing: 1px;">The Challenge</p>
+                                                <p class="mb-0 fw-bold text-center fs-18">I stepped in as the <strong>Solo Marketing Lead</strong> to build the entire GTM infrastructure from scratch — with one mission: <strong>validate product-market fit</strong> and build a high-trust acquisition funnel on a lean startup budget.</p>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="duet-highlight duet-highlight-hypothesis p-4 rounded-4 border mb-4">
-                                        <p class="fs-12 text-uppercase fw-bold mb-2" style="letter-spacing: 1px; color: #146c43;">The Mission</p>
-                                        <p class="mb-0 fw-bold text-center fs-18"><strong>Validate the product-market fit</strong> and build a high-trust acquisition funnel on a lean startup budget.</p>
+                                        <div class="col-12 col-md-5 text-center" data-aos="fade-left" data-aos-delay="100">
+                                            <img src="static/picture/plotjoys_case.png" alt="PlotJoys illustration — a child enjoying a storybook moment" style="max-width: 280px; width: 100%; transform: rotate(-3deg); filter: drop-shadow(0 8px 24px rgba(0,0,0,0.12));">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +282,7 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10">
                                 <div class="mb-5" data-aos="fade-up">
-                                    <span class="duet-section-num">02</span>
+                                    <span class="duet-section-num">01</span>
                                     <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Define</h2>
                                     <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
                                 </div>
@@ -293,7 +357,7 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10">
                                 <div class="mb-5" data-aos="fade-up">
-                                    <span class="duet-section-num">03</span>
+                                    <span class="duet-section-num">02</span>
                                     <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Develop</h2>
                                     <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
                                 </div>
@@ -393,7 +457,7 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10">
                                 <div class="mb-5" data-aos="fade-up">
-                                    <span class="duet-section-num">04</span>
+                                    <span class="duet-section-num">03</span>
                                     <h2 class="display-5 fw-bold mb-2 text-uppercase" style="letter-spacing: 2px;">Deliver</h2>
                                     <div class="bg-primary" style="width: 60px; height: 4px; margin-bottom: 3rem;"></div>
                                 </div>
@@ -430,6 +494,94 @@
                                                 <div class="duet-stat-value text-success">SOP</div>
                                                 <div class="duet-stat-label">Legacy</div>
                                                 <div class="duet-stat-desc small opacity-75">runs without me</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Organic Traffic Data Viz -->
+                                    <div class="row g-4 mb-5 align-items-center" data-aos="fade-up">
+                                        <div class="col-12 col-md-6">
+                                            <div class="plotjoys-chart-card" id="organicChart">
+                                                <div class="plotjoys-chart-header">
+                                                    <span class="plotjoys-chart-label">Organic Visits</span>
+                                                    <span class="plotjoys-chart-legend"><span class="plotjoys-legend-dot"></span>Monthly Growth</span>
+                                                </div>
+                                                <div class="plotjoys-chart-metric">+340%</div>
+                                                <div class="plotjoys-chart-area">
+                                                    <svg viewBox="0 0 400 150" preserveAspectRatio="none" class="plotjoys-chart-svg">
+                                                        <!-- Grid lines -->
+                                                        <line x1="0" y1="37.5" x2="400" y2="37.5" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4"/>
+                                                        <line x1="0" y1="75" x2="400" y2="75" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4"/>
+                                                        <line x1="0" y1="112.5" x2="400" y2="112.5" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4"/>
+                                                        <!-- Vertical dashed lines at data points -->
+                                                        <line x1="0" y1="130" x2="0" y2="130" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <line x1="57" y1="120" x2="57" y2="140" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <line x1="114" y1="105" x2="114" y2="140" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <line x1="171" y1="90" x2="171" y2="140" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <line x1="228" y1="70" x2="228" y2="140" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <line x1="285" y1="48" x2="285" y2="140" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <line x1="342" y1="30" x2="342" y2="140" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <line x1="400" y1="15" x2="400" y2="140" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 3"/>
+                                                        <!-- Filled area under the step line -->
+                                                        <polygon class="plotjoys-area-fill" points="
+                                                            0,140
+                                                            0,130 57,130
+                                                            57,120 114,120
+                                                            114,105 171,105
+                                                            171,90 228,90
+                                                            228,70 285,70
+                                                            285,48 342,48
+                                                            342,30 400,30
+                                                            400,15
+                                                            400,140
+                                                        " fill="url(#chartGradient)"/>
+                                                        <!-- Step line -->
+                                                        <polyline class="plotjoys-step-line" points="
+                                                            0,130 57,130
+                                                            57,120 114,120
+                                                            114,105 171,105
+                                                            171,90 228,90
+                                                            228,70 285,70
+                                                            285,48 342,48
+                                                            342,30 400,30
+                                                            400,15
+                                                        " fill="none" stroke="#b8f054" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <!-- Data point dots -->
+                                                        <circle cx="0" cy="130" r="4" fill="#1a1a2e" stroke="#b8f054" stroke-width="2"/>
+                                                        <circle cx="57" cy="120" r="4" fill="#1a1a2e" stroke="#b8f054" stroke-width="2"/>
+                                                        <circle cx="114" cy="105" r="4" fill="#1a1a2e" stroke="#b8f054" stroke-width="2"/>
+                                                        <circle cx="171" cy="90" r="4" fill="#1a1a2e" stroke="#b8f054" stroke-width="2"/>
+                                                        <circle cx="228" cy="70" r="4" fill="#1a1a2e" stroke="#b8f054" stroke-width="2"/>
+                                                        <circle cx="285" cy="48" r="4" fill="#1a1a2e" stroke="#b8f054" stroke-width="2"/>
+                                                        <circle cx="342" cy="30" r="4" fill="#1a1a2e" stroke="#b8f054" stroke-width="2"/>
+                                                        <circle cx="400" cy="15" r="4.5" fill="#b8f054" stroke="#b8f054" stroke-width="2"/>
+                                                        <!-- Arrow at the end -->
+                                                        <polygon points="395,10 405,15 395,20" fill="#b8f054"/>
+                                                        <!-- Gradient definition -->
+                                                        <defs>
+                                                            <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                                                <stop offset="0%" stop-color="#b8f054" stop-opacity="0.35"/>
+                                                                <stop offset="100%" stop-color="#b8f054" stop-opacity="0.03"/>
+                                                            </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                    <!-- X-axis labels -->
+                                                    <div class="plotjoys-chart-x-labels">
+                                                        <span>Month 1</span>
+                                                        <span>Month 2</span>
+                                                        <span>Month 3</span>
+                                                        <span>Month 4</span>
+                                                        <span>Month 5</span>
+                                                        <span>Month 6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="ps-md-4">
+                                                <span class="badge rounded-pill fw-semibold mb-3 px-3 py-2" style="font-size: 0.75rem; background: #1a1a2e; color: #fff; border: 1px solid #333;">Growth Metrics</span>
+                                                <h3 class="display-6 fw-bolder mb-3">Increase in<br>Organic Traffic</h3>
+                                                <p class="opacity-75 mb-0">Through creator-led SEO content, influencer partnerships, and a consistent social media engine, organic visits grew steadily month-over-month — validating the channel mix without heavy ad spend.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -578,20 +730,35 @@
     <script src="static/js/sidebar-active.js"></script>
     <script src="static/js/custom.js"></script>
     <!-- end javascript libraries -->
-    <!-- Before/After bar animation -->
+    <!-- Chart animations on scroll -->
     <script>
     (function() {
+        // Before/After bar animation
         var chart = document.getElementById('beforeAfterChart');
-        if (!chart) return;
-        var observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    chart.classList.add('animate-bars');
-                    observer.unobserve(chart);
-                }
-            });
-        }, { threshold: 0.3 });
-        observer.observe(chart);
+        if (chart) {
+            var obs1 = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        chart.classList.add('animate-bars');
+                        obs1.unobserve(chart);
+                    }
+                });
+            }, { threshold: 0.3 });
+            obs1.observe(chart);
+        }
+        // Organic traffic chart animation
+        var organic = document.getElementById('organicChart');
+        if (organic) {
+            var obs2 = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        organic.classList.add('animate');
+                        obs2.unobserve(organic);
+                    }
+                });
+            }, { threshold: 0.3 });
+            obs2.observe(organic);
+        }
     })();
     </script>
 </body>

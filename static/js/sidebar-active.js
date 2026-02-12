@@ -72,7 +72,6 @@
             'resume': 'resume',
             'contact': 'contact',
             'blog': 'blog',
-            'my-agent': 'portfolio',
             'plotjoys-gtm': 'portfolio'
         };
 
