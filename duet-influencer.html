@@ -736,7 +736,7 @@
                                     </div>
 
                                     <!-- Before/After Comparison Chart -->
-                                    <div class="duet-comparison-chart mb-5" data-aos="fade-up">
+                                    <div class="duet-comparison-chart mb-5" id="beforeAfterChart">
                                         <h6 class="fw-bold mb-4">Before vs. After</h6>
                                         <div class="duet-comparison-bars">
                                             <div class="duet-comp-row">
@@ -744,12 +744,12 @@
                                                 <div class="duet-comp-bars-wrap">
                                                     <div class="duet-comp-bar-wrap">
                                                         <span class="duet-comp-legend duet-legend-before">Before</span>
-                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-before" style="width: 35%"></div></div>
+                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-before" style="--bar-width: 35%"></div></div>
                                                         <span class="duet-comp-bar-val small opacity-75">2.8%</span>
                                                     </div>
                                                     <div class="duet-comp-bar-wrap">
                                                         <span class="duet-comp-legend duet-legend-after">After</span>
-                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-after" style="width: 88%"></div></div>
+                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-after" style="--bar-width: 88%"></div></div>
                                                         <span class="duet-comp-bar-val small fw-bold text-success">7.0%</span>
                                                     </div>
                                                 </div>
@@ -759,12 +759,12 @@
                                                 <div class="duet-comp-bars-wrap">
                                                     <div class="duet-comp-bar-wrap">
                                                         <span class="duet-comp-legend duet-legend-before">Before</span>
-                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-before" style="width: 85%"></div></div>
+                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-before" style="--bar-width: 85%"></div></div>
                                                         <span class="duet-comp-bar-val small opacity-75">High</span>
                                                     </div>
                                                     <div class="duet-comp-bar-wrap">
                                                         <span class="duet-comp-legend duet-legend-after">After</span>
-                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-after duet-comp-lower" style="width: 51%"></div></div>
+                                                        <div class="duet-comp-track"><div class="duet-comp-fill duet-comp-after duet-comp-lower" style="--bar-width: 51%"></div></div>
                                                         <span class="duet-comp-bar-val small fw-bold text-success">↓ 40%</span>
                                                     </div>
                                                 </div>
@@ -891,6 +891,22 @@
     <script src="static/js/sidebar-active.js"></script>
     <script src="static/js/custom.js"></script>
     <!-- end javascript libraries -->
+    <!-- Before/After bar animation -->
+    <script>
+    (function() {
+        var chart = document.getElementById('beforeAfterChart');
+        if (!chart) return;
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    chart.classList.add('animate-bars');
+                    observer.unobserve(chart);
+                }
+            });
+        }, { threshold: 0.3 });
+        observer.observe(chart);
+    })();
+    </script>
 </body>
 
 </html>
